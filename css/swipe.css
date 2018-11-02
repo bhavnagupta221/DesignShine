@@ -1,0 +1,29 @@
+#title {
+  font-family: Cambria;
+  font-size: 36px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  text-align: center;
+  width: 5%;
+}
+
+#seller{
+  font-family: Cambria;
+  font-size: 15px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  text-align: center;
+  width: 20%;
+}
+
+.foodInfo{
+  font-family: Helvetica;
+  font-size: 15px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  text-align: center;
+  width: 20%;
+}
