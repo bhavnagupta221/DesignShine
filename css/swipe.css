@@ -21,11 +21,10 @@ body{
 }
 
 #pic img{
-  width: 20%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 15%;
+  width: 35%;
 }
 
 .seller{
@@ -64,48 +63,42 @@ body{
 .decision {
   font-family: Helvetica;
   font-size: 12px;
-  padding: 10px;
-  margin: 10px;
   border: 1px solid black;
   text-align: center;
   background-color: black;
   border-radius: 20px;
-  margin-left: 0px;
+  padding: 10px;
+
+ /* margin-left: 0px;
   margin-top: 0px;
-  width: 5%
+  width: 5%;
+  margin: 10px;
+*/
 }
 
-
-/*.col-centered{
-    float: none;
-    margin: 0 auto;
-}*/
 
 #home{
   font-family: Helvetica;
   font-size: 12px;
   padding: 10px;
-  margin: 10px;
   border: 1px solid black;
   text-align: center;
   background-color: black;
   border-radius: 20px;
-  /*position: absolute;*/
-  right: 0px;
+  /*right: 0px;
   bottom: 0px;
-  width: 7%;
+    position: absolute;
+
+  /*width: 7%;*/
+    margin-top: 10px;
+
 }
 
-#title, .seller, .foodInfo, #home, #rate{
+/*#title, .seller, .foodInfo, #home, #rate{
   width: 15%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.decision {
-  width: 7%;
-
-}
+}*/
 
 .seller a, .decision a, #home a, .foodInfo, #rate{
   text-decoration: none;
