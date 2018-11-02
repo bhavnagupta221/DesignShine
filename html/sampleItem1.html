@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="../css/swipe.css" rel="stylesheet">
   </head>
 
   <body>
     <h2 id = "title"> Eggs </h2>
-    <div id = "seller">
-      <p>Seller: Jerrica</p>
+
+    <div class = "seller">
+      <a href="userProfile.html" target="_blank">Seller: Jerrica</a>
     </div>
 
-    <div>
+    <div class="thumbnail">
+      <p>hello</p>
+    </div>
+
+    <div id = "rate">
+      <p> Overall rating: * * * * * </p>
+    </div>
+
+    <div id = "pic">
       <img src="../images/eggs.jpeg">
     </div>
-    
-    <div class = "foodInfo">
+
+    <div class = "foodInfo" id = "location">
       <p>Location: Price Center</p>
     </div>
 
-    <div class = "foodInfo">
+    <div class = "foodInfo" id = "allergens">
       <p>Allergens: Eggs</p>
     </div>
 
-    <div>
+    <div class = "decision" id = "dislike">
       <a href="sampleItem2.html">No thanks!</a>
+    </div>
+
+    <div class = "decision" id = "like">
       <a href="match.html">I want it!</a>
     </div>
 
-    <div>
+    <div id = "home">
       <a href="home.html">Home</a>
     </div>
 
-    <div>
-      <a href="userProfile.html" target="_blank">Seller Profile</a>
-    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+  	<script src="../js/bootstrap.min.js"></script>
   </body>
 </html>

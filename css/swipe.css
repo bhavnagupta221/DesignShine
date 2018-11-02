@@ -1,3 +1,7 @@
+body{
+  background-color: gray;
+}
+
 #title {
   font-family: Cambria;
   font-size: 36px;
@@ -5,10 +9,11 @@
   margin: 10px;
   border: 1px solid black;
   text-align: center;
-  width: 5%;
+  width: 20%;
+  border-radius: 20px;
 }
 
-#seller{
+/*#pic{
   font-family: Cambria;
   font-size: 15px;
   padding: 10px;
@@ -16,6 +21,28 @@
   border: 1px solid black;
   text-align: center;
   width: 20%;
+}*/
+
+.seller{
+  font-family: Helvetica;
+  font-size: 15px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: black;
+  border-radius: 20px;
+}
+
+#rate{
+  font-family: Helvetica;
+  font-size: 15px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: black;
+  border-radius: 20px;
 }
 
 .foodInfo{
@@ -25,5 +52,82 @@
   margin: 10px;
   border: 1px solid black;
   text-align: center;
-  width: 20%;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.decision {
+  font-family: Helvetica;
+  font-size: 12px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  background-color: black;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 5%
+}
+
+#home{
+  font-family: Helvetica;
+  font-size: 12px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: black;
+  border-radius: 20px;
+  /*position: absolute;*/
+  right: 0px;
+  bottom: 0px;
+  width: 7%;
+}
+
+#like{
+  position: relative;
+  left: 10px;
+}
+
+#title, .seller, .decision, .foodInfo, #home, #rate{
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.seller a, .decision a, #home a, .foodInfo, #rate{
+  text-decoration: none;
+  color: white;
+}
+
+.seller:hover{
+  background-color: white;
+  border: 2px dotted black;
+}
+
+.seller:hover a{
+  color: black;
+  text-transform: uppercase;
+}
+
+.decision:hover{
+  background-color: white;
+  border: 2px dotted black;
+}
+
+.decision:hover a{
+  color: black;
+  text-transform: uppercase;
+}
+
+#home:hover{
+  background-color: white;
+  border: 2px dotted black;
+}
+
+#home:hover a{
+  color: black;
+  text-transform: uppercase;
 }
