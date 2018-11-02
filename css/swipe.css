@@ -3,7 +3,8 @@ body{
 }
 
 #title {
-  font-family: Cambria;
+  font-family: Helvetica;
+  text-transform: uppercase;
   font-size: 36px;
   padding: 10px;
   margin: 10px;
@@ -13,15 +14,19 @@ body{
   border-radius: 20px;
 }
 
-/*#pic{
-  font-family: Cambria;
-  font-size: 15px;
+#pic{
   padding: 10px;
   margin: 10px;
-  border: 1px solid black;
-  text-align: center;
+  /*width: 20%;*/
+}
+
+#pic img{
   width: 20%;
-}*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
 
 .seller{
   font-family: Helvetica;
@@ -63,13 +68,18 @@ body{
   margin: 10px;
   border: 1px solid black;
   text-align: center;
-  position: relative;
   background-color: black;
   border-radius: 20px;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin-left: 0px;
+  margin-top: 0px;
   width: 5%
 }
+
+
+/*.col-centered{
+    float: none;
+    margin: 0 auto;
+}*/
 
 #home{
   font-family: Helvetica;
@@ -86,15 +96,15 @@ body{
   width: 7%;
 }
 
-#like{
-  position: relative;
-  left: 10px;
-}
-
-#title, .seller, .decision, .foodInfo, #home, #rate{
+#title, .seller, .foodInfo, #home, #rate{
   width: 15%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.decision {
+  width: 7%;
+
 }
 
 .seller a, .decision a, #home a, .foodInfo, #rate{
