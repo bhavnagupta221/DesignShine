@@ -1,0 +1,24 @@
+body{
+  background-image: url("../images/breakfast.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay{
+  background-color: #edeeef;
+  border: 2px dotted;
+  width: 200px;
+  padding: 100px;
+  text-align: center;
+  margin: 0 auto;             /*horizontal center*/
+  margin-top: 15%;            /*vertical center*/
+}
+
+.choice{
+  background-color: white;
+  color: black;
+  margin: 20px;               /*was working two seconds ago but now it's not*/
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Helvetica;
+}
