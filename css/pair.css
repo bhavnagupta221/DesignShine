@@ -5,7 +5,7 @@ body{
 #title {
   font-family: Helvetica;
   text-transform: uppercase;
-  font-size: 45px;
+  font-size: 36px;
   padding: 10px;
   margin: 10px;
   border: 1px solid black;
@@ -26,7 +26,7 @@ body{
   width: 35%;
 }
 
-.seller{
+.user{
   font-family: Helvetica;
   font-size: 15px;
   padding: 10px;
@@ -37,7 +37,7 @@ body{
   border-radius: 20px;
 }
 
-#rate{
+.info{
   font-family: Helvetica;
   font-size: 15px;
   padding: 10px;
@@ -47,61 +47,33 @@ body{
   background-color: black;
   border-radius: 20px;
 }
-
-.foodInfo{
-  font-family: Helvetica;
-  font-size: 15px;
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid black;
-  text-align: center;
-  background-color: black;
-  border-radius: 20px;
-}
-
-.decision {
-  font-family: Helvetica;
-  font-size: 12px;
-  border: 1px solid black;
-  text-align: center;
-  background-color: black;
-  border-radius: 20px;
-  padding: 10px;
-}
-
 
 #home{
   font-family: Helvetica;
-  font-size: 12px;
+  font-size: 15px;
   padding: 10px;
   border: 1px solid black;
   text-align: center;
   background-color: black;
   border-radius: 20px;
   margin-top: 10px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 7%;
 }
 
-.seller a, .decision a, #home a, .foodInfo, #rate{
+.info, #home a, .user a, #name1{
   text-decoration: none;
   color: white;
 }
 
-.seller:hover{
+#name2:hover{
   background-color: white;
   border: 2px dotted black;
 }
 
-.seller:hover a{
-  color: black;
-  text-transform: uppercase;
-}
-
-.decision:hover{
-  background-color: white;
-  border: 2px dotted black;
-}
-
-.decision:hover a{
+#name2:hover a{
   color: black;
   text-transform: uppercase;
 }
