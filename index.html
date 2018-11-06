@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--link bootstrap and css stylesheet-->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/indexstyle.css" rel="stylesheet">
   </head>
 
   <body>
+
+    <!--overall box containing options-->
     <div class="overlay">
-      <a href="html/login.html" class="choice" id="login">Login</a>
+      <p class="title">Login</p>
       <br />
-      <a href="html/createUser.html" class="choice" id="newuser">Create New User</a>
+
+      <p class="userinfo">Username</p>
+      <div class="field"></div>
+      <br /> <br />
+
+      <p class="userinfo">Password</p>
+      <div class="field"></div>
+      <br /> <br />
+
+      <button class="btn btn-dark">Login</button> <!--FIX STYLING TO BUTTON-->
     </div>
+
+    <div class="newuser">
+      <p>New User? <a href="html/createUser.html">Sign Up.</a></p>
+    </div>
+
+    <!--link javascript-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
