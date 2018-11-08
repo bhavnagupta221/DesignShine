@@ -1,9 +1,4 @@
-//initializes page
-$(document).ready(function() {
-	initializePage();
-})
-
-function initializePage() {
-	$("#testjs").click(function(e) {
-		$('.jumbotron h1').text("Javascript is connected");
-	})
+// Event setup using a convenience method
+$( "p" ).click(function() {
+    console.log( "You clicked a paragraph!" );
+});
