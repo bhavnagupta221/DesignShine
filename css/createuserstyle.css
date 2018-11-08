@@ -14,9 +14,9 @@ body{
   background-color: white;
   border-radius: 10px;
   width: 400px;
-  height: 400px;
+  height: 500px;
   margin: 0 auto;             /*horizontal center*/
-  margin-top: 7%;             /*vertical center*/
+  margin-top: 5%;             /*vertical center*/
 }
 
 .title{
@@ -34,14 +34,19 @@ body{
 
 .userinfo{
   position: relative;
-  left: 10px;
+  left: 43px;
   font-size: 12px;
   margin-bottom: 5px;
   font-family: Poppins;
 }
 
-.userinfo p{
-  margin-bottom: 25px;
+.field{
+  height: 25px;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5px;
 }
 
 .btn{
@@ -51,7 +56,17 @@ body{
   border-radius: 5px;
 }
 
+.navigation{
+  position: relative;
+  top: 25px;
+}
+
 #submit{
   position: relative;
   left: 260px;
+}
+
+#profilepic{
+  margin-top: 18px;
+  margin-left: 35px;
 }

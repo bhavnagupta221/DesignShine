@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
     <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/createuserstyle.css" rel="stylesheet">
@@ -10,23 +12,36 @@
     <div class="overlay">
 
       <p class="title">Create Account</p>
-      <div class="userinfo">
-        <p>First Name: </p>
-        <p>Last Name: </p>
-        <p>Email: </p>
-        <p>Username: </p>
-        <p>Password: </p>
-        <p>School: </p>
-      </div>
 
-      <div class="userinfo">
-        <p>Upload profile picture </p>
-      </div>
+      <form>
+        <p class="userinfo">First Name: </p>
+        <input type="text" name="username" class="userinfo field">
+        <p class="userinfo">Last Name: </p>
+        <input type="text" name="username" class="userinfo field">
+        <p class="userinfo">Email: </p>
+        <input type="text" name="username" class="userinfo field">
+        <p class="userinfo">Username: </p>
+        <input type="text" name="username" class="userinfo field">
+        <p class="userinfo">Password: </p>
+        <input type="text" name="username" class="userinfo field">
+        <p class="userinfo">School: </p>
+        <input type="text" name="username" class="userinfo field">
+      </form>
+
 
       <div>
-        <a href="../index.html" class="btn btn-dark">Back </a>
+        <button type="button" class="btn btn-secondary btn-sm userinfo" id="profilepic">
+        Upload Profile Picture</button>
+      </div>
+
+      <div class="navigation">
+        <a href="../index.html" class="btn btn-dark" id="back">Back </a>
         <a href="home.html" class="btn btn-dark" id="submit">Submit </a>
       </div>
 
+      <!--link javascript-->
+      <script src="https://code.jquery.com/jquery.js"></script>
+  	  <script src="../js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="../js/login.js"></script>
   </body>
 </html>
