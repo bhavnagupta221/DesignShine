@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="../css/pickup.css" rel="stylesheet">
   </head>
 
   <body>
     <div>
-			<p>Please select pickup time range and location: </p>
-			<p>Start time: <input type="time" name="start-time" required/> </p>
-			<p>End time: <input type="time" name="end-time" required/> </p>
-      
+      <p>Please select pickup time range and location: </p>
+      <!--NEED error check to make sure end time is AFTER start time-->
+      <p>Start time: <input type="time" name="start-time" required/> </p>
+      <p>End time: <input type="time" name="end-time" required/> </p>
+
       <p>Location:
         <select class=pickupDetails>
           <option>Geisel Library</option>
@@ -18,12 +20,16 @@
         </select>
       </p>
 
-      
+
     </div>
 
     <div>
       <a href="pickuptype.html">Back</a>
       <a href="sampleItem1.html">Start Exploring!</a>
     </div>
+      
+      
+    <script src="https://code.jquery.com/jquery.js"></script>
+  	<script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
