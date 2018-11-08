@@ -8,29 +8,34 @@
 
   <body>
     <div class="container">
-      <div class = "time">
-        <p id = "phrase">Please select a drop off time range:</p>
-        <p>Start time: <input type="time" name="start-time" required/> </p>
-        <p>End time: <input type="time" name="end-time" required/> </p>
-      </div>
+      <div class = "overlay">
+        <div class="row justify-content-center">
+          <div class="col col-lg-4" id = "time" >
+            <p id = "phrase">Please select a drop off time range:</p>
+            <p id = "range">Start time: <input type="time" name="start-time" required/> </p>
+            <p id = "range">End time: <input type="time" name="end-time" required/> </p>
+          </div>
+        </div>
 
-      <div class = "dropdown">
-        <p id = "phrase">Please select a drop off location:</p>
-        <select name = "drop">
-          <option value = "Price Center"> Price Center</option>
-          <option value = "Geisel"> Geisel</option>
-          <option value = "Regent's Pizza"> Regent's Pizza</option>
-        </select>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col col-lg-4" id = "back" >
-          <a href="dropOffDetails.html">Back</a>
+        <div class="row justify-content-center">
+          <div class="col col-lg-4" id = "dropdown" >
+            <p id = "phrase">Please select a drop off location:</p>
+            <select name = "drop">
+              <option value = "blank"> ------ </option>
+              <option value = "Price Center"> Price Center</option>
+              <option value = "Geisel"> Geisel</option>
+              <option value = "Regent's Pizza"> Regent's Pizza</option>
+            </select>
+          </div>
         </div>
       </div>
 
       <div class="row justify-content-center">
-        <div class="col col-lg-4" id = "submit" >
+        <div class = "option col-lg-2 " id = "back">
+          <a href="dropOffDetails.html">Back</a>
+        </div>
+
+        <div class = "option col-lg-2 " id = "submit">
           <a href="preview.html">Submit</a>
         </div>
       </div>
