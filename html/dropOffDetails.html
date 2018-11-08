@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="../css/drop.css" rel="stylesheet">
   </head>
 
   <body>
     <p>Type: </p>
-    <p>Name of Item: </p>
-    <p>Upload Photo</p>
-    <p>Expiration Date</p>
-    <p>Describe Potential Allergens: </p>
+    <p>Name of Item: <input type="text" name="name"></p>
+    
+    <p>Upload Photo <input type="file" id="uploadpic" name="uploadpic" accept="image/*" onchange="readURL(this);"></p>
+    <p>Expiration Date <input type="date" name="exp-date" required> </p>
+    <p>Describe Potential Allergens: <input type="text" name="allergens"> </p>
+    
     <a href="dropofftype.html">Back</a>
     <a href="dropOffTime.html">Next</a>
+    
+    
+    
   </body>
 
 </html>
