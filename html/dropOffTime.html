@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/drop.css" rel="stylesheet">
   </head>
 
   <body>
-    <p>Please select drop off time range and place:</p>
-    <p>Start time: <input type="time" name="start-time" required/> </p>
-    <p>End time: <input type="time" name="end-time" required/> </p>
-    <p>Location: </p>
-    <a href="dropOffDetails.html">Back</a>
-    <a href="preview.html">Submit</a>
+    <div class="container">
+      <div class = "time">
+        <p id = "phrase">Please select a drop off time range:</p>
+        <p>Start time: <input type="time" name="start-time" required/> </p>
+        <p>End time: <input type="time" name="end-time" required/> </p>
+      </div>
+
+      <div class = "dropdown">
+        <p id = "phrase">Please select a drop off location:</p>
+        <select name = "drop">
+          <option value = "Price Center"> Price Center</option>
+          <option value = "Geisel"> Geisel</option>
+          <option value = "Regent's Pizza"> Regent's Pizza</option>
+        </select>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col col-lg-4" id = "back" >
+          <a href="dropOffDetails.html">Back</a>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col col-lg-4" id = "submit" >
+          <a href="preview.html">Submit</a>
+        </div>
+      </div>
+
+    </div>
   </body>
 </html>

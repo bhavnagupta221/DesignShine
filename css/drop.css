@@ -1,0 +1,62 @@
+body{
+  background-color: #f9f9f9;
+}
+
+#phrase {
+  font-family: Helvetica;
+  text-transform: uppercase;
+  font-size: 20px;
+  /*padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  text-align: center;
+  width: 20%;
+  border-radius: 20px;*/
+}
+
+#back{
+  font-family: Helvetica;
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: black;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+#submit{
+  font-family: Helvetica;
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: black;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+#back a, #submit a{
+  text-decoration: none;
+  color: white;
+}
+
+#back:hover{
+  background-color: white;
+  border: 2px dotted black;
+}
+
+#back:hover a{
+  color: black;
+  text-transform: uppercase;
+}
+
+#submit:hover{
+  background-color: white;
+  border: 2px dotted black;
+}
+
+#submit:hover a{
+  color: black;
+  text-transform: uppercase;
+}
