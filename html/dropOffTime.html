@@ -3,14 +3,14 @@
   <head>
     <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/drop.css" rel="stylesheet">
+    <link href="../css/time.css" rel="stylesheet">
   </head>
 
   <body>
     <div class="container">
       <div class = "overlay">
         <div class="row justify-content-center">
-          <div class="col col-lg-4" id = "time" >
+          <div class="col col-lg-10 text-left" id = "time" >
             <p id = "phrase">Please select a drop off time range:</p>
             <p id = "range">Start time: <input type="time" name="start-time" required/> </p>
             <p id = "range">End time: <input type="time" name="end-time" required/> </p>
@@ -18,14 +18,16 @@
         </div>
 
         <div class="row justify-content-center">
-          <div class="col col-lg-4" id = "dropdown" >
+          <div class="col col-lg-10 text-left" id = "dropdown" >
             <p id = "phrase">Please select a drop off location:</p>
-            <select name = "drop">
-              <option value = "blank"> ------ </option>
-              <option value = "Price Center"> Price Center</option>
-              <option value = "Geisel"> Geisel</option>
-              <option value = "Regent's Pizza"> Regent's Pizza</option>
-            </select>
+            <div id = "val">
+              <select name = "drop">
+                  <option value = "blank"> ------ </option>
+                  <option value = "Price Center"> Price Center</option>
+                  <option value = "Geisel"> Geisel</option>
+                  <option value = "Regent's Pizza"> Regent's Pizza</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>

@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="../css/pickup.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/time.css" rel="stylesheet">
   </head>
 
   <body>
-    <div>
-      <p>Please select pickup time range and location: </p>
-      <!--NEED error check to make sure end time is AFTER start time-->
-      <p>Start time: <input type="time" name="start-time" required/> </p>
-      <p>End time: <input type="time" name="end-time" required/> </p>
+    <div class="container">
+      <div class = "overlay">
+        <div class="row justify-content-center">
+          <div class="col col-lg-10 text-left" id = "time" >
+            <p id = "phrase">Please select a pick up time range:</p>
+            <p id = "range">Start time: <input type="time" name="start-time" required/> </p>
+            <p id = "range">End time: <input type="time" name="end-time" required/> </p>
+          </div>
+        </div>
 
-      <p>Location:
-        <select class=pickupDetails>
-          <option>Geisel Library</option>
-          <option>The Living Room</option>
-          <option>Regents Pizza</option>
-          <option>Price Center</option>
-        </select>
-      </p>
+        <div class="row justify-content-center">
+          <div class="col col-lg-10 text-left" id = "dropdown" >
+            <p id = "phrase">Please select a pick up location:</p>
+            <div id = "val">
+              <select name = "drop">
+                  <option value = "blank"> ------ </option>
+                  <option value = "Price Center"> Price Center</option>
+                  <option value = "Geisel"> Geisel</option>
+                  <option value = "Regent's Pizza"> Regent's Pizza</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="row justify-content-center">
+        <div class = "option col-lg-2 " id = "back">
+          <a href="pickuptype.html">Back</a>
+        </div>
+
+        <div class = "option col-lg-2 " id = "submit">
+          <a href="sampleItem1.html">Start</a>
+        </div>
+      </div>
 
     </div>
-
-    <div>
-      <a href="pickuptype.html">Back</a>
-      <a href="sampleItem1.html">Start Exploring!</a>
-    </div>
-      
-      
-    <script src="https://code.jquery.com/jquery.js"></script>
-  	<script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
