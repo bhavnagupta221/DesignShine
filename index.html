@@ -14,18 +14,20 @@
     <!--overall box containing options-->
     <div class="overlay">
       <p class="title">Login</p>
-      <br />
+      <br /><br />
 
-      <p class="userinfo">Username</p>
-      <div class="field"></div>
-      <br /> <br />
+      <form>
+        <p class="userinfo">Username</p>
+        <input type="text" name="username" class="userinfo field">
+        <br /><br />
+        <p class="userinfo">Password</p>
+        <input type="password" name="psw" class="userinfo field">
+      </form>
 
-      <p class="userinfo">Password</p>
-      <div class="field"></div>
-      <br /> <br />
-
-      <a href="html/home.html" class="btn btn-dark">Login</a>
+      <br /><br />
+      <a href="html/home.html" class="btn btn-dark" id="login">Login</a>
     </div>
+
 
     <div class="newuser">
       <p>New User? <a href="html/createUser.html">Sign Up.</a></p>
