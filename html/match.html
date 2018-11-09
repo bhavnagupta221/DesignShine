@@ -7,6 +7,8 @@
   </head>
 
   <body>
+    <script id="entry-template" type="text/x-handlebars-template">
+
     <div class = "container">
       <div class = "overlay">
         <div class="row justify-content-center">
@@ -19,21 +21,21 @@
           </div>
 
           <div class = "user col-lg-4" id = "name2">
-            <a href="userProfile.html" target="_blank">Jerrica</a>
+            <a href="userProfile.html" target="_blank">{{seller}}</a>
           </div>
         </div>
 
         <div id = "pic">
-          <img src = "../images/eggs.jpeg">
+          <img src = {{image}}>
         </div>
 
         <div class="row justify-content-center">
           <div class = "info col-lg-4 " id = "location">
-            <p>Price Center</p>
+            <p>{{location}}</p>
           </div>
 
           <div class = "info col-lg-4 " id = "time">
-            <p>6:15PM</p>
+            <p>{{start-time}}-{{end-time}}</p>
           </div>
         </div>
       </div>
@@ -44,7 +46,16 @@
         </div>
     </div>
 
+    </script> 
+    
+    <div id="templatedProjects">
+      <!-- we will inject templated project HTML code into here -->
+    </div>
+
+    
     <script src="https://code.jquery.com/jquery.js"></script>
   	<script src="../js/bootstrap.min.js"></script>
+    <script src="../js/handlebars-v4.0.12.js"></script>
+    <script src="../js/data.js"></script>
   </body>
 </html>
