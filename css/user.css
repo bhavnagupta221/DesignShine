@@ -2,8 +2,18 @@ body{
   background-color: #f9f9f9;
 }
 
+
+.overlay{
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 320px;
+  margin: 0 auto;             /*horizontal center*/
+  margin-top: 7%;             /*vertical center*/
+}
+
 #title {
-  font-family: Helvetica;
+  font-family: Futura;
   text-transform: uppercase;
   font-size: 36px;
   padding: 10px;
@@ -12,43 +22,30 @@ body{
   text-align: center;
 }
 
-.overlay{
-  background-color: white;
-  border-radius: 10px;
-  width: 400px;
-  height:400px;
-  margin: 0 auto;             /*horizontal center*/
-  margin-top: 7%;             /*vertical center*/
-}
 
-#pic{
-  padding: 10px;
-  margin: 10px;
-}
-
-#pic img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-}
-
-.user{
-  font-family: Helvetica;
-  font-size: 15px;
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
-  border: 1px solid black;
-}
-
-.info{
-  font-family: Helvetica;
+#rating{
+  font-family: Futura;
   font-size: 15px;
   padding: 5px;
-  margin: 5px;
+  margin: 10px;
   text-align: center;
-  border: 1px solid black;
+}
+
+#past {
+  font-family: Futura;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 5px;
+  margin: 10px;
+  text-align: left;
+}
+
+#listFood{
+  font-family: Futura;
+  font-size: 15px;
+  padding: 5px;
+  margin: 10px;
+  text-align: left;
 }
 
 .navbutton{
@@ -59,22 +56,6 @@ body{
   text-align: center;
   background-color: black;
   border-radius: 20px;
-  margin-top: 10px;
-}
-
-.info, #home a, .user a, #name1{
-  text-decoration: none;
-  color: black;
-}
-
-#name2:hover{
-  background-color: white;
-  border: 2px dotted black;
-}
-
-#name2:hover a{
-  color: black;
-  text-transform: uppercase;
 }
 
 .navbutton a{

@@ -7,19 +7,18 @@
   </head>
 
   <body>
-    <script id="entry-template" type="text/x-handlebars-template">
-
-      <div class = "container">
+    <div class = "container">
+      <div class = "overlay">
         <div class="row justify-content-center">
           <h2 id = "title col-lg-4"> MATCH </h2>
         </div>
 
         <div class="row justify-content-center">
-          <div class = "user col-lg-2 " id = "name1">
+          <div class = "user col-lg-4" id = "name1">
             <p> Jerma </p>
           </div>
 
-          <div class = "user col-lg-2 " id = "name2">
+          <div class = "user col-lg-4" id = "name2">
             <a href="userProfile.html" target="_blank">Jerrica</a>
           </div>
         </div>
@@ -29,32 +28,23 @@
         </div>
 
         <div class="row justify-content-center">
-          <div class = "info col-lg-2 " id = "location">
+          <div class = "info col-lg-4 " id = "location">
             <p>Price Center</p>
           </div>
 
-          <div class = "info col-lg-2 " id = "time">
+          <div class = "info col-lg-4 " id = "time">
             <p>6:15PM</p>
           </div>
         </div>
-
-        <div class="row justify-content-center">
-          <div class="col col-lg-8" id = "home" >
+      </div>
+        <div class="row">
+          <div class = "option col-sm-1 offset-md-7 navbutton">
             <a href="home.html">Home</a>
           </div>
         </div>
-      </div>
-
-    </script> 
-    
-    <div id="templatedProjects">
-      <!-- we will inject templated project HTML code into here -->
     </div>
-    
 
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/handlebars-v4.0.12.js"></script>
-    <script src="../js/data.js"></script>
+  	<script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
