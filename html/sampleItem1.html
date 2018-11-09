@@ -1,66 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
     <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/swipe.css" rel="stylesheet">
-
+    <link href="../css/itemtemplatestyle.css" rel="stylesheet">
   </head>
 
   <body>
-    <div class="container">
-      <div class="row justify-content-center">
-        <h2 id = "title col-lg-4"> Eggs </h2>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class = "seller col-lg-4">
-          <a href="userProfile.html" target="_blank">Seller: Jerrica</a>
+    <div class="overlay">
+      <h2  class ="title"> Eggs </h2>
+      <div>
+        <div class="profile">
+          <a href="userProfile.html" target="_blank" class="userinfo" id="seller">Seller: Jerrica</a>
+          <p id="rate">&starf; &starf; &starf; &starf; &starf;</p>
         </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col col-lg-4" id = "rate">
-          <p> Overall rating: * * * * * </p>
-        </div>
-      </div>
-
-      <div id = "pic">
         <img src="../images/eggs.jpeg">
+        <p class="userinfo" id="location">Location: Price Center</p>
+        <p class="userinfo" id="allergens">Allergens: Eggs</p>
       </div>
 
 
-      <div class="row justify-content-center">
-        <div class = "foodInfo col-lg-4" id = "location">
-          <p>Location: Price Center</p>
-        </div>
+      <div class="navigation">
+        <a href="sampleItem2.html" class="btn btn-dark userinfo" id="back">No thanks!</a>
+        <a href="home.html"><i class="glyphicon glyphicon-home"></i></a>
+        <a href="match.html" class="btn btn-dark userinfo" id="submit">I want it!</a>
       </div>
-
-      <div class="row justify-content-center">
-        <div class = "foodInfo col-lg-4" id = "allergens">
-          <p>Allergens: Eggs</p>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class = "decision col-lg-2 " id = "dislike">
-          <a href="sampleItem2.html">No thanks!</a>
-        </div>
-
-        <div class = "decision col-lg-2 " id = "like">
-          <a href="match.html">I want it!</a>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col col-lg-4" id = "home" >
-          <a href="home.html">Home</a>
-        </div>
-      </div>
-
     </div>
+
 
     <script src="https://code.jquery.com/jquery.js"></script>
   	<script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
   </body>
 </html>

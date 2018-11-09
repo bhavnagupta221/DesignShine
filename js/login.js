@@ -35,3 +35,18 @@ $('#back').mouseleave(function() {
 	$(this).css("background-color","#343a40");
 	$(this).css("border-color", "#343a40");
 });
+
+//hover over user profile link
+$('.profile').mousemove(function() {
+	$(this).css("background-color", "black");
+	$(this).css("color","white");
+	$('#seller').css("color","white");
+	$(this).css("border-color","white")
+});
+
+$('.profile').mouseleave(function() {
+	$(this).css("background-color","white");
+	$(this).css("color", "black");
+	$('#seller').css("color","black");
+	$(this).css("border-color","black");
+});
