@@ -7,43 +7,54 @@
   </head>
 
   <body>
-    <div class = "container">
-      <div class="row justify-content-center">
-        <h2 id = "title col-lg-4"> MATCH </h2>
-      </div>
+    <script id="entry-template" type="text/x-handlebars-template">
 
-      <div class="row justify-content-center">
-        <div class = "user col-lg-2 " id = "name1">
-          <p> Jerma </p>
+      <div class = "container">
+        <div class="row justify-content-center">
+          <h2 id = "title col-lg-4"> MATCH </h2>
         </div>
 
-        <div class = "user col-lg-2 " id = "name2">
-          <a href="userProfile.html" target="_blank">Jerrica</a>
+        <div class="row justify-content-center">
+          <div class = "user col-lg-2 " id = "name1">
+            <p> Jerma </p>
+          </div>
+
+          <div class = "user col-lg-2 " id = "name2">
+            <a href="userProfile.html" target="_blank">Jerrica</a>
+          </div>
+        </div>
+
+        <div id = "pic">
+          <img src = "../images/eggs.jpeg">
+        </div>
+
+        <div class="row justify-content-center">
+          <div class = "info col-lg-2 " id = "location">
+            <p>Price Center</p>
+          </div>
+
+          <div class = "info col-lg-2 " id = "time">
+            <p>6:15PM</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col col-lg-8" id = "home" >
+            <a href="home.html">Home</a>
+          </div>
         </div>
       </div>
 
-      <div id = "pic">
-        <img src = "../images/eggs.jpeg">
-      </div>
-
-      <div class="row justify-content-center">
-        <div class = "info col-lg-2 " id = "location">
-          <p>Price Center</p>
-        </div>
-
-        <div class = "info col-lg-2 " id = "time">
-          <p>6:15PM</p>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col col-lg-8" id = "home" >
-          <a href="home.html">Home</a>
-        </div>
-      </div>
+    </script> 
+    
+    <div id="templatedProjects">
+      <!-- we will inject templated project HTML code into here -->
     </div>
+    
 
     <script src="https://code.jquery.com/jquery.js"></script>
-  	<script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/handlebars-v4.0.12.js"></script>
+    <script src="../js/data.js"></script>
   </body>
 </html>

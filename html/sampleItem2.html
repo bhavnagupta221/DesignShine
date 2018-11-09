@@ -8,6 +8,8 @@
   </head>
 
   <body>
+    <script id="entry-template" type="text/x-handlebars-template"></script>
+
     <div class="container">
       <div class="row justify-content-center">
         <h2 id = "title col-lg-4"> Broccoli Salad </h2>
@@ -44,7 +46,7 @@
 
       <div class="row justify-content-center">
         <div class = "decision col-lg-2 " id = "dislike">
-          <a href="noMatch.html">No thanks!</a>
+          <a href="ItemTemplate.html?project=Eggs">No thanks!</a>
         </div>
 
         <div class = "decision col-lg-2 " id = "like">
@@ -61,6 +63,8 @@
     </div>
 
     <script src="https://code.jquery.com/jquery.js"></script>
-  	<script src="../js/bootstrap.min.js"></script>
+  	<script src="../js/bootstrap.min.js"></script>    
+    <script src="../js/handlebars-v4.0.12.js"></script>
+    <script src="../js/data.js"></script>
   </body>
 </html>
