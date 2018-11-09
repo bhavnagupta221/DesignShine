@@ -7,7 +7,8 @@ var eggs = {'title': 'Eggs',
                   'image': '../images/eggs.jpeg',
                   'start-time': '6:00PM',
                   'end-time': '6:50PM',
-                  'location': 'Price Center'};
+                  'location': 'Price Center',
+                  'next': 'Broccoli'};
 
 var broccoli = {'title': 'Broccoli',
                   'seller': 'Jerrica',
@@ -15,10 +16,11 @@ var broccoli = {'title': 'Broccoli',
                   'description': 'yum yum broccoli',
                   'expiration date': '11/28/18',
                   'allergens': 'N/A',
-                  'image': '../images/broccoli.jpeg',
+                  'image': '../images/broccoli.jpg',
                   'start-time': '6:00PM',
                   'end-time': '6:50PM',
-                  'location': 'Price Center'};
+                  'location': 'Price Center',
+                  'next': 'Eggs'};
 
 var complexData = [eggs, broccoli];
 
