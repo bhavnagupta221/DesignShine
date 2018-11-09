@@ -1,4 +1,4 @@
-var sampleData = {'title': 'Eggs',
+var eggs = {'title': 'Eggs',
                   'seller': 'Jerrica',
                   'type': 'produce',
                   'description': '1 dozen fresh eggs',
@@ -7,7 +7,20 @@ var sampleData = {'title': 'Eggs',
                   'image': '../images/eggs.jpeg',
                   'start-time': '6:00PM',
                   'end-time': '6:50PM',
-                  'location': 'Price Center'}
+                  'location': 'Price Center'};
+
+var broccoli = {'title': 'Broccoli',
+                  'seller': 'Jerrica',
+                  'type': 'produce',
+                  'description': 'yum yum broccoli',
+                  'expiration date': '11/28/18',
+                  'allergens': 'N/A',
+                  'image': '../images/broccoli.jpeg',
+                  'start-time': '6:00PM',
+                  'end-time': '6:50PM',
+                  'location': 'Price Center'};
+
+var complexData = [eggs, broccoli];
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
@@ -20,13 +33,13 @@ $(document).ready(function() {
   var parentDiv = $("#templatedProjects");
 
   // BEGIN - STEP 1
-  
+  /*
   // start with a simple template
   var html = template(sampleData);
   console.log(html);
   parentDiv.append(html);
   // now iterate through the complexData list and keep appending:
- /* for (var i = 0; i < complexData.length; i++) {
+  for (var i = 0; i < complexData.length; i++) {
     var curData = complexData[i];
     var curHtml = template(curData);
     parentDiv.append(curHtml);
@@ -55,7 +68,7 @@ $(document).ready(function() {
 
 
   // BEGIN - STEP 3
-  /*
+  
   // Use the URLSearchParams API to make fake-database queries using a URL
   // https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
   var queryParams = new URLSearchParams(window.location.search);
@@ -70,6 +83,6 @@ $(document).ready(function() {
       parentDiv.append(curHtml);
     }
   }
-  */
+  
   // END - STEP 3
 });
