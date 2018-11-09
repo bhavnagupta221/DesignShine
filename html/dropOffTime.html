@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/time.css" rel="stylesheet">
   </head>
 
   <body>
-    <p>Please select drop off time range and place:</p>
-    <p>Start: </p>
-    <p>End: </p>
-    <p>Location: </p>
-    <a href="dropOffDetails.html">Back</a>
-    <a href="preview.html">Submit</a>
+    <div class="container">
+      <div class = "overlay">
+        <div class="row justify-content-center">
+          <div class="col col-lg-10 text-left" id = "time" >
+            <p id = "phrase">Please select a drop off time range:</p>
+            <p id = "range">Start time: <input type="time" name="start-time" required/> </p>
+            <p id = "range">End time: <input type="time" name="end-time" required/> </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col col-lg-10 text-left" id = "dropdown" >
+            <p id = "phrase">Please select a drop off location:</p>
+            <div id = "val">
+              <select name = "drop">
+                  <option value = "blank"> ------ </option>
+                  <option value = "Price Center"> Price Center</option>
+                  <option value = "Geisel"> Geisel</option>
+                  <option value = "Regent's Pizza"> Regent's Pizza</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class = "option col-sm-1 offset-md-4 navbutton">
+          <a href="dropOffDetails.html">Back</a>
+        </div>
+
+        <div class = "option col-sm-1 offset-md-2 navbutton">
+          <a href="preview.html">Next</a>
+        </div>
+      </div>
+
+
+
+    </div>
   </body>
 </html>

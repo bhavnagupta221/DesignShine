@@ -1,0 +1,63 @@
+body{
+  background-color: #f9f9f9;
+}
+
+.overlay{
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 290px;
+  margin: 0 auto;             /*horizontal center*/
+  margin-top: 7%;             /*vertical center*/
+}
+
+#phrase {
+  font-family: Futura;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+}
+
+#range {
+  padding: 10px;
+  margin: 10px;
+  font-size: 12px;
+  text-align: left;
+  font-family: Futura;
+}
+
+#val {
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+  font-family: Futura;
+}
+
+.navbutton{
+  font-family: Helvetica;
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: black;
+  border-radius: 20px;
+  margin-top: 10px;  
+}
+
+
+.navbutton a{
+  text-decoration: none;
+  color: white;
+}
+
+.navbutton:hover{
+  background-color: white;
+  border: 2px dotted black;
+}
+
+.navbutton:hover a{
+  color: black;
+  text-transform: uppercase;
+}

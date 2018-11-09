@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/preview.css" rel="stylesheet">
   </head>
 
   <body>
-    <h2> Eggs </h2>
-    <div>
-      <p>Seller: Jerrica</p>
-      <img src="../images/eggs.jpeg">
-      <p>Location: Price Center</p>
-      <p>Allergens: Eggs</p>
-    </div>
-    
-    <div>
-      <a href="dropOffDetails.html">Edit Item</a>
-    </div>
-    
-    <div>
-      <a href="home.html">Home</a>
-    </div>
+    <div class="overlay">
+      <h2 class="title"> Eggs </h2>
+      <div>
+        <p class="userinfo" id="seller">Seller: Jerrica</p>
+        <img src="../images/eggs.jpeg">
+        <p class="userinfo" id="location">Location: Price Center</p>
+        <p class="userinfo" id="allergens">Allergens: Eggs</p>
+      </div>
+
+      <div>
+        <a href="dropOffDetails.html" class="btn btn-dark userinfo" id="back">Edit Item</a>
+        <a href="home.html" class="btn btn-dark userinfo" id="submit">Submit</a>
+      </div>
+
+
+    <!--link javascript-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
   </body>
 </html>

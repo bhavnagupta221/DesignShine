@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/time.css" rel="stylesheet">
   </head>
 
   <body>
-    <div>
-			<p>Please select pickup time range and location: </p>
-			<p>Start time: </p>	
-      <p>End time: </p>
-      <p>Location: </p>
-    </div>
+    <div class="container">
+      <div class = "overlay">
+        <div class="row justify-content-center">
+          <div class="col col-lg-10 text-left" id = "time" >
+            <p id = "phrase">Please select a pick up time range:</p>
+            <p id = "range">Start time: <input type="time" name="start-time" required/> </p>
+            <p id = "range">End time: <input type="time" name="end-time" required/> </p>
+          </div>
+        </div>
 
-    <div>
-      <a href="home.html">back</a>
-      <a href="sampleItem1.html">Start Exploring!</a>
+        <div class="row justify-content-center">
+          <div class="col col-lg-10 text-left" id = "dropdown" >
+            <p id = "phrase">Please select a pick up location:</p>
+            <div id = "val">
+              <select name = "drop">
+                  <option value = "blank"> ------ </option>
+                  <option value = "Price Center"> Price Center</option>
+                  <option value = "Geisel"> Geisel</option>
+                  <option value = "Regent's Pizza"> Regent's Pizza</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class = "option col-sm-1 offset-md-4 navbutton">
+          <a href="pickuptype.html">Back</a>
+        </div>
+
+        <div class = "option col-sm-1 offset-md-2 navbutton">
+          <a href="ItemTemplate.html?project=Eggs">Start</a>
+        </div>
+      </div>
+  
+
     </div>
   </body>
 </html>

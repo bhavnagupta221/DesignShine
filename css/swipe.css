@@ -1,11 +1,11 @@
 body{
-  background-color: gray;
+  background-color: #f9f9f9;
 }
 
 #title {
   font-family: Helvetica;
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 45px;
   padding: 10px;
   margin: 10px;
   border: 1px solid black;
@@ -17,7 +17,6 @@ body{
 #pic{
   padding: 10px;
   margin: 10px;
-  /*width: 20%;*/
 }
 
 #pic img{
@@ -68,12 +67,6 @@ body{
   background-color: black;
   border-radius: 20px;
   padding: 10px;
-
- /* margin-left: 0px;
-  margin-top: 0px;
-  width: 5%;
-  margin: 10px;
-*/
 }
 
 
@@ -85,20 +78,8 @@ body{
   text-align: center;
   background-color: black;
   border-radius: 20px;
-  /*right: 0px;
-  bottom: 0px;
-    position: absolute;
-
-  /*width: 7%;*/
-    margin-top: 10px;
-
+  margin-top: 10px;
 }
-
-/*#title, .seller, .foodInfo, #home, #rate{
-  width: 15%;
-  margin-left: auto;
-  margin-right: auto;
-}*/
 
 .seller a, .decision a, #home a, .foodInfo, #rate{
   text-decoration: none;

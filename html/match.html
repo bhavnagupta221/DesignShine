@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pair.css" rel="stylesheet">
   </head>
 
   <body>
-    <div>
-      <p></p>
-      <a href="home.html">Home </a>
+    <script id="entry-template" type="text/x-handlebars-template">
+
+    <div class = "container">
+      <div class = "overlay">
+        <div class="row justify-content-center">
+          <h2 id = "title col-lg-4"> MATCH </h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class = "user col-lg-4" id = "name1">
+            <p> Jerma </p>
+          </div>
+
+          <div class = "user col-lg-4" id = "name2">
+            <a href="userProfile.html" target="_blank">{{seller}}</a>
+          </div>
+        </div>
+
+        <div id = "pic">
+          <img src = {{image}}>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class = "info col-lg-4 " id = "location">
+            <p>{{location}}</p>
+          </div>
+
+          <div class = "info col-lg-4 " id = "time">
+            <p>{{start-time}}-{{end-time}}</p>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class = "option col-sm-1 offset-md-7 navbutton">
+            <a href="home.html">Home</a>
+          </div>
+        </div>
     </div>
 
-    <div>
-      <h2>MATCH</h2>
-      <p> Jerma Jerrica</p>
+    </script> 
+    
+    <div id="templatedProjects">
+      <!-- we will inject templated project HTML code into here -->
     </div>
 
-    <div>
-      <p>Eggs</p>
-      <img src = "../images/eggs.jpeg">
-    </div>
-
-    <div>
-      <p>Price Center 6:15PM</p>
-    </div>
-
+    
+    <script src="https://code.jquery.com/jquery.js"></script>
+  	<script src="../js/bootstrap.min.js"></script>
+    <script src="../js/handlebars-v4.0.12.js"></script>
+    <script src="../js/data.js"></script>
   </body>
 </html>

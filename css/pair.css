@@ -1,0 +1,93 @@
+body{
+  background-color: #f9f9f9;
+}
+
+#title {
+  font-family: Helvetica;
+  text-transform: uppercase;
+  font-size: 36px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.overlay{
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  height:400px;
+  margin: 0 auto;             /*horizontal center*/
+  margin-top: 7%;             /*vertical center*/
+}
+
+#pic{
+  padding: 10px;
+  margin: 10px;
+}
+
+#pic img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.user{
+  font-family: Helvetica;
+  font-size: 15px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.info{
+  font-family: Helvetica;
+  font-size: 15px;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.navbutton{
+  font-family: Helvetica;
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: black;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.info, #home a, .user a, #name1{
+  text-decoration: none;
+  color: black;
+}
+
+#name2:hover{
+  background-color: white;
+  border: 2px dotted black;
+}
+
+#name2:hover a{
+  color: black;
+  text-transform: uppercase;
+}
+
+.navbutton a{
+  text-decoration: none;
+  color: white;
+}
+
+.navbutton:hover{
+  background-color: white;
+  border: 2px dotted black;
+}
+
+.navbutton:hover a{
+  color: black;
+  text-transform: uppercase;
+}

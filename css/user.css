@@ -1,0 +1,74 @@
+body{
+  background-color: #f9f9f9;
+}
+
+
+.overlay{
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 320px;
+  margin: 0 auto;             /*horizontal center*/
+  margin-top: 7%;             /*vertical center*/
+}
+
+#title {
+  font-family: Futura;
+  text-transform: uppercase;
+  font-size: 36px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+
+#rating{
+  font-family: Futura;
+  font-size: 15px;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+}
+
+#past {
+  font-family: Futura;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 5px;
+  margin: 10px;
+  text-align: left;
+}
+
+#listFood{
+  font-family: Futura;
+  font-size: 15px;
+  padding: 5px;
+  margin: 10px;
+  text-align: left;
+}
+
+.navbutton{
+  font-family: Helvetica;
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.navbutton a{
+  text-decoration: none;
+  color: white;
+}
+
+.navbutton:hover{
+  background-color: white;
+  border: 2px dotted black;
+}
+
+.navbutton:hover a{
+  color: black;
+  text-transform: uppercase;
+}

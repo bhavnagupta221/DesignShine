@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/dropoff.css" rel="stylesheet">
   </head>
 
   <body>
-    <p>Type: </p>
-    <p>Name of Item: </p>
-    <p>Upload Photo</p>
-    <p>Expiration Date</p>
-    <p>Describe Potential Allergens: </p>
-    <a href="dropofftype.html">Back</a>
-    <a href="dropOffTime.html">Next</a>
+    <div class="container">
+      <div class="overlay">
+        <p class="title">DROPOFF DETAILS</p>
+
+        <div class="row justify-content-center">
+          <form>
+            <p class="info">Name of Item </p>
+            <input type="text" name="name" class="field">
+            <br />
+
+            <p class="info">Description</p>
+            <input type="text" name="desc" class="field">
+            <br />
+
+            <p class="info">Expiration Date</p>
+            <input type="date" name="exp-date" class="field">
+            <br />
+
+            <p class="info">Describe Potential Allergens</p>
+            <input type="text" name="allergens" class="field">
+
+            <p class="info">Upload Photo </p>
+            <input type="file" id="uploadpic" name="uploadpic" accept="image/*" onchange="readURL(this);">
+          </form>
+        </div>
+        
+      </div>
+      
+      <div class="row">
+        <div class="option col-sm-1 offset-md-4 navbutton">
+          <a href="dropofftype.html">Back</a>
+        </div>
+        <div class="option col-sm-1 offset-md-2 navbutton">
+          <a href="dropOffTime.html">Next</a>
+        </div>
+      </div>
+  
+    </div>
+    
   </body>
 
 </html>

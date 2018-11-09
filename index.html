@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+    <!--link bootstrap and css stylesheet-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/indexstyle.css" rel="stylesheet">
   </head>
 
   <body>
-    <div>
-      <a href="html/login.html">Login</a>
+
+    <!--overall box containing options-->
+    <div class="overlay">
+      <p class="title">Login</p>
+      <br /><br />
+
+      <form>
+        <p class="userinfo">Username</p>
+        <input type="text" name="username" class="userinfo field">
+        <br /><br />
+        <p class="userinfo">Password</p>
+        <input type="password" name="psw" class="userinfo field">
+      </form>
+
+      <br /><br />
+      <a href="html/home.html" class="btn btn-dark" id="login">Login</a>
     </div>
 
-    <div>
-      <a href="html/createUser.html">Create New User</a>
+
+    <div class="newuser">
+      <p>New User? <a href="html/createUser.html">Sign Up.</a></p>
     </div>
+
+    <!--link javascript-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
   </body>
 </html>

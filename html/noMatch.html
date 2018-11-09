@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/noPair.css" rel="stylesheet">
   </head>
 
   <body>
-    <div>
-      <h2> No Match!</h2>
-      <p> Sorry you couldn't find a match! Please try a new search!</p>
+    <script id="entry-template" type="text/x-handlebars-template"></script>
+    <div class = "container">
+        <div class = "overlay">
+          <div class="row justify-content-center">
+            <h2 id = "title col-lg-4"> NO MATCH! </h2>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col col-lg-10 text-center" id = "sorry" >
+              <p> Sorry you couldn't find a match! Please try a new search!</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class = "option col-md-2 offset-md-5 navbutton">
+          <a href="home.html">Home</a>
+        </div>
+      </div>
+
     </div>
 
-    <div>
-      <a href="home.html">Search again!</a>
-    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/handlebars-v4.0.12.js"></script>
+    <script src="../js/data.js"></script>
   </body>
 </html>

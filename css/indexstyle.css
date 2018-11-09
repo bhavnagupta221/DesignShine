@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v5/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body{
+  background-color: #f9f9f9;
+}
+
+.overlay{
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;             /*horizontal center*/
+  margin-top: 7%;             /*vertical center*/
+}
+
+.title{
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-family: Poppins;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  top: 15px;
+}
+
+.userinfo{
+  position: relative;
+  left: 43px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.field{
+  height: 35px;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn{
+  position: relative;
+  left: 43px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.newuser{
+  font-family: Poppins;
+  text-align: center;
+  font-size: 12px;
+  position: relative;
+  top: 10px;
+}
