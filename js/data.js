@@ -2,7 +2,7 @@ var eggs = {'title': 'Eggs', 'seller': 'Jerrica', 'type': 'produce',
             'description': '1 dozen fresh eggs', 'expiration date': '11/21/18',
             'allergens': 'egg', 'image': '../images/eggs.jpeg',
             'start-time': '6:00PM', 'end-time': '6:50PM', 'location': 'Price Center',
-            'next': 'Broccoli'};
+            'next': 'Brownies'};
 
 var broccoli = {'title': 'Broccoli', 'seller': 'Jerrica', 'type': 'produce',
                 'description': 'yum yum broccoli', 'expiration date': '11/28/18',

@@ -1,65 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
     <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/swipe.css" rel="stylesheet">
-
+    <link href="../css/itemtemplatestyle.css" rel="stylesheet">
   </head>
 
   <body>
-    
     <script id="entry-template" type="text/x-handlebars-template">
-      <div class="container">
-        <div class="row justify-content-center">
-          <h2 id = "title col-lg-4"> {{title}} </h2>
-        </div>
 
-        <div class="row justify-content-center">
-          <div class = "seller col-lg-4">
-            <a href="userProfile.html" target="_blank">Seller: {{seller}}</a>
-          </div>
+    <div class="overlay">
+      <h2  class ="title"> {{title}} </h2>
+      <div>
+        <div class="profile">
+          <a href="userProfile.html" target="_blank" class="userinfo" id="seller">Seller: {{seller}}</a>
+          <p id="rate">&starf; &starf; &starf; &starf; &starf;</p>
         </div>
-        
-        <div id = "pic">
-          <img src={{image}}>
-        </div>
+        <img src={{image}}>
+        <p class="userinfo" id="location">Location: {{location}}</p>
+        <p class="userinfo" id="allergens">Allergens: {{allergens}}</p>
+      </div>
 
-        <div class="row justify-content-center">
-          <div class = "foodInfo col-lg-4" id = "location">
-            <p>Location: {{location}}</p>
-          </div>
-        </div>
 
-        <div class="row justify-content-center">
-          <div class = "foodInfo col-lg-4" id = "allergens">
-            <p>Allergens: {{allergens}}</p>
-          </div>
-        </div>
+      <div class="navigation">
+        <a href="ItemTemplate.html?project={{next}}" class="btn btn-dark userinfo" id="back">No thanks!</a>
+        <a href="home.html"><i class="glyphicon glyphicon-home"></i></a>
+        <a href="match.html?project={{title}}" class="btn btn-dark userinfo" id="submit">I want it!</a>
+      </div>
+    </div>
 
-        <div class="row justify-content-center">
-          <div class = "decision col-lg-2 " id = "dislike">
-            <a href="ItemTemplate.html?project={{next}}">No thanks!</a>
-          </div>
 
-          <div class = "decision col-lg-2 " id = "like">
-            <a href="match.html?project={{title}}">I want it!</a>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col col-lg-4" id = "home" >
-            <a href="home.html">Home</a>
-          </div>
-        </div>
-        
     </script> 
-    
-    
     <div id="templatedProjects">
       <!-- we will inject templated project HTML code into here -->
     </div>
-    
+  
     
     <script src="https://code.jquery.com/jquery.js"></script>
   	<script src="../js/bootstrap.min.js"></script>
