@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v5/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 body{
   background-color: #f9f9f9;
 }
@@ -8,15 +16,16 @@ body{
   width: 400px;
   height: auto;
   margin: 0 auto;
+  margin-top: 16%;
 }
 
-#drop_overlay{
+/*#drop_overlay{
   margin-top: 10%;
 }
 
 #pick_overlay{
   margin-top: 8%;
-}
+}*/
 
 .field{
   height: 35px;
@@ -28,39 +37,44 @@ body{
 }
 
 .title{
-  font-family: Futura;
+  font-family: Poppins, Helvetica;
   font-size: 15px;
   margin-top: 7%;
 }
 
 .ps{
-  font-family: Helvetica;
+  font-family: Poppins, Helvetica;
   font-size: 15px;
   margin-left: 7%;
 }
 
 #or {
-  font-family: Futura;
+  font-family: Poppins, Helvetica;
   font-size: 16px;
 }
 
+
 .navbutton{
   font-family: Helvetica;
-  font-size: 15px;
-  padding: 10px;
-  border: 1px solid black;
-  text-align: center;
-  background-color: black;
-  border-radius: 20px;
+  width: 400px;
+  margin: 0 auto;
   margin-top: 10px;
 }
 
 .navbutton a{
   text-decoration: none;
   color: white;
+  font-size: 13px;
+  margin-bottom: 5px;
+  margin-left: 10px;
 }
 
-.navbutton:hover{
+#next{
+  position: relative;
+  left: 260px;
+}
+
+/*.navbutton:hover{
   background-color: white;
   border: 2px dotted black;
 }
@@ -68,4 +82,4 @@ body{
 .navbutton:hover a{
   color: black;
   text-transform: uppercase;
-}
+}*/

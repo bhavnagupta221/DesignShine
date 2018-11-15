@@ -5,44 +5,49 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/type.css" rel="stylesheet">
   </head>
-  
-  
+
+
   <body>
     <div class="container">
       <div class="overlay" id="pick_overlay">
         <div class="row justify-content-center">
           <div class="col col-lg-10" id="pickuptype">
             <p class="title">WHICH TYPE OF FOOD WOULD YOU LIKE TO PICK UP?</p>
-            <p class="ps"> <input type=checkbox name="produce"> produce </p>
-            <p class="ps"> <input type=checkbox name="packaged"> packaged </p>
-            <p class="ps"> <input type=checkbox name="prepared"> prepared </p>
+            <p class="ps"> <input type=checkbox name="produce"> Produce </p>
+            <p class="ps"> <input type=checkbox name="packaged"> Packaged </p>
+            <p class="ps"> <input type=checkbox name="prepared"> Prepared </p>
           </div>
         </div>
 
-        <div class="row justify-content-center">
+        <!--COMMENT OUT SEARCH ENGINE<div class="row justify-content-center">
           <div class="col col-lg-1" id="or">
-            OR <br> 
+            OR <br>
           </div>
         </div>
-        
-        
+
+
         <div class="row justify-content-center">
           <div class="col col-lg-10">
             <p class="title">SEARCH FOR A SPECIFIC ITEM: <input type="text" name="search" class="field"> </p>
           </div>
+        </div>-->
+        <div class="navigation"> <!--each a originally wrapped in div with class navbutton-->
+          <div class="navbutton">
+            <a href="home.html" class="btn btn-dark">Back</a>
+            <a href="pickuptime.html" class="btn btn-dark" id="next">Next</a>
+          </div>
         </div>
       </div>
 
-      <div class="row ">
-        <div class="option col-sm-1 offset-md-4 navbutton">
-          <a href="home.html">Back</a>
+      <!--putting nav inside overlay
+      <div class="navigation">
+        <div class="navbutton">
+          <a href="home.html" class="btn btn-dark">Back</a>
+          <a href="pickuptime.html" class="btn btn-dark" id="next">Next</a>
         </div>
-        
-        <div class="option col-sm-1 offset-md-2 navbutton">
-          <a href="pickuptime.html">Next</a>
-        </div>
-      </div>
-      
+      </div> -->
+
+
     </div>
   </body>
 </html>
