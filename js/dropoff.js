@@ -32,10 +32,11 @@ $("#dropofftype-submit").click(function() {
 });
 
 
-$("dropofftime-submit").click(function() {
+$("#dropofftime-submit").click(function() {
   currItem = localStorage.key(0);
   tempItem = JSON.parse(localStorage[currItem]);
-  
+  var e = document.getElementById("location");
+  tempItem.location = e.options[e.selectedIndex].value;
   localStorage.setItem(currItem, JSON.stringify(tempItem));
   
 });
