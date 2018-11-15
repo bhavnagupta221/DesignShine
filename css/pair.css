@@ -1,15 +1,23 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v5/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 body{
   background-color: #f9f9f9;
 }
 
 #title {
-  font-family: Helvetica;
+  font-family: Poppins, Helvetica;
   text-transform: uppercase;
   font-size: 36px;
   padding: 10px;
   margin: 10px;
-  border: 1px solid black;
   text-align: center;
+  margin-top: 5px;
 }
 
 .overlay{
@@ -34,32 +42,34 @@ body{
 }
 
 .user{
-  font-family: Helvetica;
+  font-family: Poppins, Helvetica;
   font-size: 15px;
-  padding: 10px;
   margin: 10px;
   text-align: center;
-  border: 1px solid black;
+}
+
+.btn-block{
+  width: 65%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Poppins, Helvetica;
 }
 
 .info{
-  font-family: Helvetica;
-  font-size: 15px;
-  padding: 5px;
+  font-family: Poppins, Helvetica;
+  font-size: 13px;
+  /*padding: 5px;*/
+  padding-bottom: 0px;
+  padding-top: 10px;
   margin: 5px;
   text-align: center;
   border: 1px solid black;
+  border-radius: 3px;
 }
 
 .navbutton{
-  font-family: Helvetica;
-  font-size: 15px;
-  padding: 10px;
-  border: 1px solid black;
   text-align: center;
-  background-color: black;
-  border-radius: 20px;
-  margin-top: 10px;
+  /*margin-top: 10px;*/
 }
 
 .info, #home a, .user a, #name1{
@@ -67,7 +77,15 @@ body{
   color: black;
 }
 
-#name2:hover{
+.glyphicon{
+  position: relative;
+  /*left: 100px;*/
+  padding-top: 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/*#name2:hover{
   background-color: white;
   border: 2px dotted black;
 }
@@ -75,19 +93,4 @@ body{
 #name2:hover a{
   color: black;
   text-transform: uppercase;
-}
-
-.navbutton a{
-  text-decoration: none;
-  color: white;
-}
-
-.navbutton:hover{
-  background-color: white;
-  border: 2px dotted black;
-}
-
-.navbutton:hover a{
-  color: black;
-  text-transform: uppercase;
-}
+}*/
