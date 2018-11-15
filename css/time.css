@@ -10,11 +10,18 @@ body{
   background-color: #f9f9f9;
 }
 
+p{
+  font-family: Poppins, Helvetica;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-left: 65px;
+}
 .overlay{
   background-color: white;
   border-radius: 10px;
   width: 400px;
-  height: 330px;
+  height: 350px;
   margin: 0 auto;             /*horizontal center*/
   margin-top: 12%;            /*vertical center*/
 }
@@ -38,14 +45,14 @@ body{
 
 #val {
   padding: 10px;
-  margin: 10px;
+  margin-left: 10px;
   text-align: left;
   font-family: Poppins, Helvetica;
 }
 
 .navbutton{
   font-family: Helvetica;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 
