@@ -29,7 +29,21 @@
             <input type="text" id="allergens" class="field">
 
             <p class="info">Upload Photo </p>
-            <input type="file" id="uploadpic" name="uploadpic" accept="image/*" onchange="readURL(this);">
+            <input type="file" id="uploadpic" accept="image/*" />
+            <!--<script type='text/javascript'>
+              function encodeImageAsURL() {
+                var file = document.getElementById("uploadpic").files[0];
+                var filereader = new FileReader();
+                filereader.onload = function(fileLoadedEvent) {
+                  var srcData = fileLoadedEvent.target.result;
+                  //var newImage = document.createElement('img');
+                  //newImage.src = srcData;
+                  
+                  //document.getElementById
+                }
+                filereader.readAsDataURL(file);
+              }
+            </script>-->
           </form>
         </div>
 
