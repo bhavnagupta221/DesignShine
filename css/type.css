@@ -74,6 +74,11 @@ body{
   left: 260px;
 }
 
+.next{
+  position: relative;
+  left: 260px;
+}
+
 /*.navbutton:hover{
   background-color: white;
   border: 2px dotted black;
