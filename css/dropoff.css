@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v5/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 body{
   background-color: #f9f9f9;
 }
@@ -6,9 +14,9 @@ body{
   background-color: white;
   border-radius: 10px;
   width: 400px;
-  height: auto;
+  height: 380px;
   margin: 0 auto;
-  margin-top: 8%;
+  margin-top: 12%;
   padding-bottom: 25px;
 }
 
@@ -16,7 +24,7 @@ body{
   color: black;
   text-decoration: none;
   text-align: center;
-  font-family: Futura;
+  font-family: Poppins, Helvetica;
   position: relative;
   font-size: 24px;
   top: 15px;
@@ -26,9 +34,9 @@ body{
 .info{
   position: relative;
   left: 3px;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 1px;
-  font-family: Futura;
+  font-family: Poppins, Helvetica;
   padding-top: 7px;
 }
 
@@ -42,26 +50,25 @@ body{
 
 .navbutton{
   font-family: Helvetica;
-  font-size: 15px;
-  padding: 10px;
-  border: 1px solid black;
-  text-align: center;
-  background-color: black;
-  border-radius: 20px;
+  width: 400px;
+  margin: 0 auto;
   margin-top: 10px;
 }
 
 .navbutton a{
   text-decoration: none;
   color: white;
+  font-size: 13px;
+  margin-bottom: 5px;
+  margin-left: 10px;
 }
 
-.navbutton:hover{
-  background-color: white;
-  border: 2px dotted black;
+.next{
+  position: relative;
+  left: 260px;
 }
 
-.navbutton:hover a{
-  color: black;
-  text-transform: uppercase;
+form input{
+  font-family: Poppins, Helvetica;
+  font-size: 13px;
 }
