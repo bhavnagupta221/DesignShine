@@ -1,0 +1,17 @@
+{
+	"name": "String",
+	"produce": "Boolean",
+	"packaged": "Boolean",
+	"prepared": "Boolean",
+	"description": "String",
+	"expirationDate": "String",
+	"allergens": {
+		"allergen": "String",
+		"allergen": "String"
+	},
+	"photo": "String",
+ 	"startTime": "String",
+	"endTime": "String",
+	"location": "String"
+}
+
