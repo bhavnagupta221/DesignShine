@@ -14,9 +14,10 @@ body{
   background-color: white;
   border-radius: 10px;
   width: 400px;
-  height: 500px;
+  height: 530px;
   margin: 0 auto;             /*horizontal center*/
   margin-top: 5%;             /*vertical center*/
+  position: relative;
 }
 
 .title{
@@ -90,7 +91,8 @@ img{
 }
 
 .navigation{
-  position: relative;
+  position: absolute;
+  bottom: 5px;
   left: 10px;
 }
 
