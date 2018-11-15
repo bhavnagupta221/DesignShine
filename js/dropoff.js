@@ -1,5 +1,5 @@
 var tempItem = {
-  'name': "",
+  /*'name': "",
   "description": "",
   "expirationDate": "",
   "allergens": "",  
@@ -9,15 +9,16 @@ var tempItem = {
   "prepared": "",
   "startTime": "",
   "endTime": "",
-  "location": ""
+  "location": ""*/
 };
 
 $("#dropofftype-submit").click(function() {
-  tempItem = JSON.parse(localStorage[name]);
+  currItem = localStorage.key(1);
+  tempItem = JSON.parse(localStorage[currItem]);
   tempItem.produce = document.getElementById('produce').checked;
   tempItem.packaged = document.getElementById('packaged').checked;
   tempItem.prepared = document.getElementById('prepared').checked;
- // localStorage.setItem(name, JSON.stringify(tempItem))
+  localStorage.setItem(currItem, JSON.stringify(tempItem));
 });
 
 $("#dropoffinfo-submit").click(function() {
@@ -31,6 +32,6 @@ $("#dropoffinfo-submit").click(function() {
 
 $(document).ready(function() {
   //console.log(tempItem);  
-  console.log(localStorage.key(1));
-
+  //console.log(localStorage.key(1));
+  //localStorage.removeAll();
 });
