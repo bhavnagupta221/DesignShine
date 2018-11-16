@@ -26,14 +26,12 @@ var done = {'title': 'Done'};
 
 var complexData = [eggs, broccoli, brownies, pasta, banana, pistachios, cheerios, fruitloops];
 
+
 $("#dislike").click(function() {
-  console.log("clickclick");
   var counter = parseInt(localStorage.getItem("counter"));
   counter += 1;
-  console.log('counter:', counter);
   order = JSON.parse(localStorage.getItem("itemsOrder"));
-  if (counter > order.length) {
-    
+  if (counter >= order.length) {
     window.location = "noMatch.html";
   }
   else {
@@ -43,10 +41,22 @@ $("#dislike").click(function() {
   
 });
 
+$("#submit").click(function() {
+  var counter = parseInt(localStorage.getItem("counter"));
+  order = JSON.parse(localStorage.getItem("itemsOrder"));
+  
+  localStorage.setItem("counter", "0");
+  
+  window.location = "match.html?name=" + order[counter];
+  matches = JSON.parse(localStorage.getItem("matches"));
+  matches.push(order[counter]);
+  localStorage.setItem("matches", JSON.stringify(matches));
+  
+});
+
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
-  console.log('hello world');
-
+  
   // compile the template
   var source   = $("#entry-template").html();
   var template = Handlebars.compile(source);
@@ -55,7 +65,7 @@ $(document).ready(function() {
 
   var queryParams = new URLSearchParams(window.location.search);
   var foodItem = queryParams.get('name');
-  console.log('query for', foodItem);
+  //console.log('query for', foodItem);
   
   if (foodItem == "Done") {
     window.location.href = '../html/noMatch.html';
@@ -64,6 +74,7 @@ $(document).ready(function() {
   for (var i=0; i<localStorage.length; i++) {
     currElem = localStorage.key(i);
     if (currElem==foodItem) {
+      console.log(i);
       var curHtml = template(JSON.parse(localStorage.getItem(currElem)));
       parentDiv.append(curHtml);
     } 

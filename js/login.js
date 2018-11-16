@@ -54,6 +54,8 @@ $('.profile').mouseleave(function() {
 $("#login").click( function() {
   var username = document.getElementById("username").value;
   var password = document.getElementById("psw").value;
+  localStorage.setItem("matches", JSON.stringify([]));
+
   if ( username == "redBlue" && password == "shoelaces"){
     window.location = "home.html";
     return true;
@@ -63,4 +65,5 @@ $("#login").click( function() {
     window.location = "index.html";
     return false;
   }
+  
 });
