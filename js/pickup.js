@@ -33,7 +33,12 @@ $("#pickuptype-submit").click(function() {
   
   console.log("ItemTemplate.html?name=" + matches[0]);
   
-  window.location = "ItemTemplate.html?name=" + matches[0];
+  if(matches.length > 0) {
+    window.location = "ItemTemplate.html?name=" + matches[0];
+    localStorage.setItem("counter", "0");
+  }
+  else
+    window.location = "noMatch.html";
 });
 
 

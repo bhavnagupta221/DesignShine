@@ -18,7 +18,6 @@ function encodeImageAsURL() {
   var file = elem.files[0];
   var reader = new FileReader();
   reader.onloadend = function() {
-    console.log('RESULT', reader.result)
     tempItem.pic = reader.result;
   }
   reader.readAsDataURL(file);

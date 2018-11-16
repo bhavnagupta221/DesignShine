@@ -50,7 +50,12 @@ body{
 }
 
 img{
-  width: 100%;
+  /*width: ;*/
+  max-width: 400px;
+  max-height: 250px;
+  display: block;
+  margin: 0 auto;
+
 }
 
 .userinfo{
@@ -90,7 +95,7 @@ img{
   text-align: center;
 }
 
-.navigation{
+.navigation {
   position: absolute;
   bottom: 5px;
   left: 10px;
@@ -109,6 +114,6 @@ img{
   text-decoration: none;
 }
 
-.navigation a{
+.navigation a, .navigation btn{
   text-decoration: none;
 }
