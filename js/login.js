@@ -50,3 +50,17 @@ $('.profile').mouseleave(function() {
 	$('#seller').css("color","black");
 	$(this).css("border-color","black");
 });
+
+$("#login").click( function() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("psw").value;
+  if ( username == "redBlue" && password == "shoelaces"){
+    window.location = "home.html";
+    return true;
+  }
+  else {
+    alert("Invalid Login Information!")
+    window.location = "index.html";
+    return false;
+  }
+});
