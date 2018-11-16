@@ -13,6 +13,7 @@ var tempItem = {
 };
 
 function encodeImageAsURL() {
+  console.log("image processing");
   var elem = document.getElementById('uploadpic');
   var file = elem.files[0];
   var reader = new FileReader();
@@ -62,6 +63,7 @@ $("#dropofftime-submit").click(function() {
 
 
 $(document).ready(function() {
+  tempItem = {};
   //console.log(tempItem);  
   //console.log(localStorage.key(1));
   //localStorage.removeAll();

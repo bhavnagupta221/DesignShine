@@ -61,13 +61,14 @@ body{
   margin-top: 10px;
 }
 
-.navbutton a{
+.navbutton a, .navbutton btn{
   text-decoration: none;
   color: white;
   font-size: 13px;
   margin-bottom: 5px;
   margin-left: 10px;
 }
+
 
 #next{
   position: relative;

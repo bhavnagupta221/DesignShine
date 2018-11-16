@@ -70,28 +70,38 @@ $(document).ready(function() {
   */
   // END - STEP 2
 
-
+ 
+  
   // BEGIN - STEP 3
   
   // Use the URLSearchParams API to make fake-database queries using a URL
   // https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
   var queryParams = new URLSearchParams(window.location.search);
-  var projectTitle = queryParams.get('project');
-  console.log('query for', projectTitle);
+  var foodItem = queryParams.get('name');
+  console.log('query for', foodItem);
   // to get this to work like in class, comment out the "STEP 1" parts
   // above between BEGIN and END.
 
-  if (projectTitle == "Done") {
+  if (foodItem == "Done") {
     window.location.href = '../html/noMatch.html';
   }
   
+  for (var i=0; i<localStorage.length; i++) {
+    currElem = localStorage.key(i);
+    if (currElem==foodItem) {
+      var curHtml = template(JSON.parse(localStorage.getItem(currElem)));
+      parentDiv.append(curHtml);
+    } 
+  }
+  
+  /*
   for (var i = 0; i < complexData.length; i++) {
     var curData = complexData[i];
     if (curData.title == projectTitle) {
       var curHtml = template(curData);
       parentDiv.append(curHtml);
     }
-  }
+  }*/
   
   // END - STEP 3
 });

@@ -6,7 +6,37 @@ $("#pickuptype-submit").click(function() {
   pickupQuery.prepared = document.getElementById('prepared').checked;
   
   localStorage.setItem("currQuery", JSON.stringify(pickupQuery));
+  
+  //create order of items that match search
+  var matches = [];
+
+  for (var i=0; i<localStorage.length; i++) {
+    currElem = localStorage.key(i);
+    if (currElem=="currItem" || currElem == "currQuery" || currElem == "itemsOrder") {
+      continue;   
+    } 
+    
+    var item = JSON.parse(localStorage.getItem(currElem));
+    
+    if (item.produce && pickupQuery.produce) {
+      matches.push(item.name);
+    }
+    else if (item.packaged && pickupQuery.packaged) {
+      matches.push(item.name);
+    }
+    else if (item.prepared && pickupQuery.prepared) {
+      matches.push(item.name);
+    }
+  }
+  
+  localStorage.setItem("itemsOrder", JSON.stringify(matches));
+  
+  console.log("ItemTemplate.html?name=" + matches[0]);
+  
+  window.location = "ItemTemplate.html?name=" + matches[0];
 });
+
+
 
 $("#pickuptime-submit").click(function() {
   console.log("clicked");
