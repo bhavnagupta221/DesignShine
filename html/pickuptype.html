@@ -13,9 +13,9 @@
         <div class="row justify-content-center">
           <div class="col col-lg-10" id="pickuptype">
             <p class="title">WHICH TYPE OF FOOD WOULD YOU LIKE TO PICK UP?</p>
-            <p class="ps"> <input type=checkbox name="produce"> Produce </p>
-            <p class="ps"> <input type=checkbox name="packaged"> Packaged </p>
-            <p class="ps"> <input type=checkbox name="prepared"> Prepared </p>
+            <p class="ps"> <input type=checkbox id="produce"> Produce </p>
+            <p class="ps"> <input type=checkbox id="packaged"> Packaged </p>
+            <p class="ps"> <input type=checkbox id="prepared"> Prepared </p>
           </div>
         </div>
 
@@ -34,7 +34,7 @@
         <div class="navigation"> <!--each a originally wrapped in div with class navbutton-->
           <div class="navbutton">
             <a href="home.html" class="btn btn-dark">Back</a>
-            <a href="pickuptime.html" class="btn btn-dark" id="next">Next</a>
+            <a href="pickuptime.html" class="next btn btn-dark" id="pickuptype-submit">Next</a>
           </div>
         </div>
       </div>
@@ -46,8 +46,11 @@
           <a href="pickuptime.html" class="btn btn-dark" id="next">Next</a>
         </div>
       </div> -->
-
-
     </div>
+    
+    <script src="https://code.jquery.com/jquery.js"></script>
+  	<script src="../js/bootstrap.min.js"></script>
+    <script src="../js/pickup.js"></script>
+
   </body>
 </html>

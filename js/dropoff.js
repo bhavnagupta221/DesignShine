@@ -29,11 +29,6 @@ $("#dropoffinfo-submit").click(function() {
   tempItem.expirationDate = document.getElementById('exp-date').value;
   tempItem.allergens = document.getElementById('allergens').value;
   
-  
-  //console.log(document.getElementById('uploadpic').value);
-  //tempItem.pic = document.getElementById('uploadpic').value;
-  
-  
   localStorage.setItem("currItem", tempItem.name);
   localStorage.setItem(tempItem.name, JSON.stringify(tempItem));
 });
