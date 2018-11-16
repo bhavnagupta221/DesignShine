@@ -10,50 +10,33 @@ body{
   background-color: #f9f9f9;
 }
 
-#title {
-  font-family: Poppins, Helvetica;
-  text-transform: uppercase;
-  font-size: 36px;
-  margin: 10px;
-  text-align: center;
-}
-
 .overlay{
   background-color: white;
   border-radius: 10px;
   width: 400px;
-  height: 290px;
+  height: 450px;
   margin: 0 auto;             /*horizontal center*/
-  margin-top: 12%;             /*vertical center*/
+  margin-top: 8%;
   position: relative;
 }
 
-#sorry {
+.title{
   font-family: Poppins, Helvetica;
-  text-transform: uppercase;
-  font-size: 15px;
-  padding: 50px;
-  margin: 10px;
-}
-
-.navbutton{
-  font-family: Helvetica;
-  font-size: 15px;
+  font-size: 35px;
   text-align: center;
-  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.description p{
+  font-family: Poppins, Helvetica;
+  font-size: 13px;
+  text-align: justify;
+  margin: 15px;
+}
+
+.overlay .btn{
   position: absolute;
+  font-size: 13px;
   bottom: 5px;
-  left: 48%;
-}
-
-.navbutton a{
-  text-decoration: none;
-
-}
-
-.glyphicon{
-  /*left: 100px;*/
-  padding-top: 20px;
-  font-size: 20px;
-  text-decoration: none;
+  left: 160px;
 }

@@ -5,31 +5,45 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/type.css" rel="stylesheet">
   </head>
-  
+
   <body>
     <div class="container">
       <div class="overlay" id="drop_overlay">
         <div class="row justify-content-center">
           <div class="col col-lg-10" id="pickuptype">
             <p class="title">WHICH TYPE OF FOOD WOULD YOU LIKE TO DROP OFF?</p>
-            <p class="ps"> <input type=checkbox name="produce"> produce </p>
-            <p class="ps"> <input type=checkbox name="packaged"> packaged </p>
-            <p class="ps"> <input type=checkbox name="prepared"> prepared </p>
+            <form>
+              <p class="ps"> <input type=radio name="ps" id="produce"> Produce </p>
+              <p class="ps"> <input type=radio name="ps" id="packaged"> Packaged </p>
+              <p class="ps"> <input type=radio name="ps" id="prepared"> Prepared </p>
+            </form>
+          </div>
+        </div>
+        <!--navigation-->
+        <div class="navigation">
+          <div class="navbutton">
+            <a href="dropOffDetails.html" class="btn btn-dark">Back</a>
+            <a href="dropOffTime.html" id="dropofftype-submit" class="next btn btn-dark">Next</a>
           </div>
         </div>
       </div>
 
+      <!--
       <div class="row ">
         <div class="option col-sm-1 offset-md-4 navbutton">
-          <a href="home.html">Back</a>
+          <a href="dropOffDetails.html">Back</a>
         </div>
-        
+
         <div class="option col-sm-1 offset-md-2 navbutton">
-          <a href="dropOffDetails.html">Next</a>
+          <a href="dropOffTime.html" id="dropofftype-submit">Next</a>
         </div>
-      </div>
-      
+      </div>-->
+
     </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+  	<script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dropoff.js"></script>
+
   </body>
-  
+
 </html>

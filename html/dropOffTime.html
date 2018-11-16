@@ -10,18 +10,90 @@
     <div class="container">
       <div class = "overlay">
         <div class="row justify-content-center">
-          <div class="col col-lg-10 text-left" id = "time" >
-            <p id = "phrase">Please select a drop off time range:</p>
-            <p id = "range">Start time: <input type="time" name="start-time" required/> </p>
-            <p id = "range">End time: <input type="time" name="end-time" required/> </p>
+          <div class="col col-lg-10 text-left" id = "dropdown" >
+            <p id = "phrase">Please select a pick up time range:</p>
+            <div id = "val">
+              <select name = "drop" id="starthour">
+                <option value = "null"> -- </option>
+                <option value = "1"> 1</option>
+                <option value = "2"> 2</option>
+                <option value = "3"> 3</option>
+                <option value = "4"> 4</option>
+                <option value = "5"> 5</option>
+                <option value = "6"> 6</option>
+                <option value = "7"> 7</option>
+                <option value = "8"> 8</option>
+                <option value = "9"> 9</option>
+                <option value = "10"> 10</option>
+                <option value = "11"> 11</option>
+                <option value = "12"> 12</option>
+              </select>
+              <select name = "drop" id="startmin">
+                <option value = "null"> -- </option>
+                <option value = "00"> 00</option>
+                <option value = "05"> 05</option>
+                <option value = "10"> 10</option>
+                <option value = "15"> 15</option>
+                <option value = "20"> 20</option>
+                <option value = "25"> 25</option>
+                <option value = "30"> 30</option>
+                <option value = "35"> 35</option>
+                <option value = "40"> 40</option>
+                <option value = "45"> 45</option>
+                <option value = "50"> 50</option>
+                <option value = "55"> 55</option>
+              </select>
+              <select name = "drop" id="startday-night">
+                  <option value = "null"> -- </option>
+                  <option value = "am"> am</option>
+                  <option value = "pm"> pm</option>
+              </select>
+
+              <p>to</p>
+              <select name = "drop" id="endhour">
+                <option value = "null"> -- </option>
+                <option value = "1"> 1</option>
+                <option value = "2"> 2</option>
+                <option value = "3"> 3</option>
+                <option value = "4"> 4</option>
+                <option value = "5"> 5</option>
+                <option value = "6"> 6</option>
+                <option value = "7"> 7</option>
+                <option value = "8"> 8</option>
+                <option value = "9"> 9</option>
+                <option value = "10"> 10</option>
+                <option value = "11"> 11</option>
+                <option value = "12"> 12</option>
+              </select>
+              <select name = "drop" id="endmin">
+                <option value = "null"> -- </option>
+                <option value = "00"> 00</option>
+                <option value = "05"> 05</option>
+                <option value = "10"> 10</option>
+                <option value = "15"> 15</option>
+                <option value = "20"> 20</option>
+                <option value = "25"> 25</option>
+                <option value = "30"> 30</option>
+                <option value = "35"> 35</option>
+                <option value = "40"> 40</option>
+                <option value = "45"> 45</option>
+                <option value = "50"> 50</option>
+                <option value = "55"> 55</option>
+              </select>
+              <select name = "drop" id="endday-night">
+                <option value = "null"> -- </option>
+                <option value = "am"> am</option>
+                <option value = "pm"> pm</option>
+              </select>
+            </div>
           </div>
         </div>
 
         <div class="row justify-content-center">
-          <div class="col col-lg-10 text-left" id = "dropdown" >
+          <div class="col col-lg-10 text-left" id = "dropdown">
             <p id = "phrase">Please select a drop off location:</p>
             <div id = "val">
-              <select name = "drop">
+              <select name = "drop" id="location">
                   <option value = "blank"> ------ </option>
                   <option value = "Price Center"> Price Center</option>
                   <option value = "Geisel"> Geisel</option>
@@ -30,20 +102,34 @@
             </div>
           </div>
         </div>
+
+        <!--navigation-->
+        <div class="navigation">
+          <div class="navbutton">
+            <a href="dropofftype.html" class="btn btn-dark">Back</a>
+            <a href="previewTemplate.html" id="dropofftime-submit" class="next btn btn-dark">Next</a>
+          </div>
+        </div>
       </div>
 
+      <!--
       <div class="row">
         <div class = "option col-sm-1 offset-md-4 navbutton">
-          <a href="dropOffDetails.html">Back</a>
+          <a href="dropofftype.html">Back</a>
         </div>
 
         <div class = "option col-sm-1 offset-md-2 navbutton">
-          <a href="preview.html">Next</a>
+          <a href="preview.html" id="dropofftime-submit">Next</a>
         </div>
-      </div>
+      </div>-->
 
 
 
     </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+  	<script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dropoff.js"></script>
+
   </body>
 </html>

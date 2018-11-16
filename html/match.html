@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/pair.css" rel="stylesheet">
@@ -12,47 +14,45 @@
     <div class = "container">
       <div class = "overlay">
         <div class="row justify-content-center">
-          <h2 id = "title col-lg-4"> MATCH </h2>
+          <h2 id = "title"> MATCH! </h2>
         </div>
 
+        <!--SELLER BUTTON-->
         <div class="row justify-content-center">
-          <div class = "user col-lg-4" id = "name1">
-            <p> Jerma </p>
-          </div>
-
-          <div class = "user col-lg-4" id = "name2">
-            <a href="userProfile.html" target="_blank">{{seller}}</a>
-          </div>
+          <a href=""  class="btn btn-outline-dark btn-lg btn-block" id="name2">Food: {{name}}</a>
         </div>
 
+        <!--PHOTO OF ITEM-->
         <div id = "pic">
-          <img src = {{image}}>
+          <img src = {{pic}}>
         </div>
 
+        <!--MEETING LOCATION-->
         <div class="row justify-content-center">
           <div class = "info col-lg-4 " id = "location">
             <p>{{location}}</p>
           </div>
 
+          <!--MEETING TIME WINDOW-->
           <div class = "info col-lg-4 " id = "time">
-            <p>{{start-time}}-{{end-time}}</p>
+            <p>{{startTime}} - {{endTime}}</p>
           </div>
+        </div>
+
+        <!--HOME BUTTON-->
+        <div class = "navbutton">
+          <a href="home.html"><i class="glyphicon glyphicon-home"></i></a>
         </div>
       </div>
-        <div class="row">
-          <div class = "option col-sm-1 offset-md-7 navbutton">
-            <a href="home.html">Home</a>
-          </div>
-        </div>
     </div>
+    </script>
 
-    </script> 
-    
+
     <div id="templatedProjects">
       <!-- we will inject templated project HTML code into here -->
     </div>
 
-    
+
     <script src="https://code.jquery.com/jquery.js"></script>
   	<script src="../js/bootstrap.min.js"></script>
     <script src="../js/handlebars-v4.0.12.js"></script>

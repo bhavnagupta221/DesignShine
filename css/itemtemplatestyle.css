@@ -14,9 +14,10 @@ body{
   background-color: white;
   border-radius: 10px;
   width: 400px;
-  height: 500px;
+  height: 530px;
   margin: 0 auto;             /*horizontal center*/
   margin-top: 5%;             /*vertical center*/
+  position: relative;
 }
 
 .title{
@@ -49,7 +50,12 @@ body{
 }
 
 img{
-  width: 100%;
+  /*width: ;*/
+  max-width: 400px;
+  max-height: 250px;
+  display: block;
+  margin: 0 auto;
+
 }
 
 .userinfo{
@@ -89,8 +95,9 @@ img{
   text-align: center;
 }
 
-.navigation{
-  position: relative;
+.navigation {
+  position: absolute;
+  bottom: 5px;
   left: 10px;
 }
 
@@ -107,6 +114,6 @@ img{
   text-decoration: none;
 }
 
-.navigation a{
+.navigation a, .navigation btn{
   text-decoration: none;
 }

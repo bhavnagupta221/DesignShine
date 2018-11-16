@@ -14,38 +14,49 @@
         <div class="row justify-content-center">
           <form>
             <p class="info">Name of Item </p>
-            <input type="text" name="name" class="field">
+            <input type="text" id="name" class="field">
             <br />
 
             <p class="info">Description</p>
-            <input type="text" name="desc" class="field">
+            <input type="text" id="desc" class="field">
             <br />
 
             <p class="info">Expiration Date</p>
-            <input type="date" name="exp-date" class="field">
+            <input type="date" id="exp-date" class="field">
             <br />
 
             <p class="info">Describe Potential Allergens</p>
-            <input type="text" name="allergens" class="field">
+            <input type="text" id="allergens" class="field">
 
             <p class="info">Upload Photo </p>
-            <input type="file" id="uploadpic" name="uploadpic" accept="image/*" onchange="readURL(this);">
+            <input type="file" id="uploadpic" accept="image/*" onchange="encodeImageAsURL();"/>
+            
           </form>
         </div>
-        
+
+        <!--navigation-->
+        <div class="navbutton">
+          <a href="home.html" class="btn btn-dark">Back</a>
+          <a href="dropofftype.html" class="next btn btn-dark" id="dropoffinfo-submit">Next</a>
+        </div>
+
       </div>
-      
+
+      <!--
       <div class="row">
         <div class="option col-sm-1 offset-md-4 navbutton">
-          <a href="dropofftype.html">Back</a>
+          <a href="home.html">Back</a>
         </div>
         <div class="option col-sm-1 offset-md-2 navbutton">
-          <a href="dropOffTime.html">Next</a>
+          <a href="dropofftype.html" id = "dropoffinfo-submit">Next</a>
         </div>
-      </div>
-  
+      </div>-->
+
     </div>
-    
+    <script src="https://code.jquery.com/jquery.js"></script>
+  	<script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dropoff.js"></script>
+
   </body>
 
 </html>

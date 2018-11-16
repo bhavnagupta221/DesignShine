@@ -14,27 +14,27 @@
     <script id="entry-template" type="text/x-handlebars-template">
 
     <div class="overlay">
-      <h2  class ="title"> {{title}} </h2>
+      <h2  class ="title"> {{name}} </h2>
       <div>
         <div class="profile">
           <a href="userProfile.html" target="_blank" class="userinfo" id="seller">Seller: {{seller}}</a>
           <p id="rate">&starf; &starf; &starf; &starf; &starf;</p>
         </div>
-        <img src={{image}}>
+        <img src={{pic}}>
         <p class="userinfo" id="location">Location: {{location}}</p>
         <p class="userinfo" id="allergens">Allergens: {{allergens}}</p>
       </div>
+    </script> 
 
 
       <div class="navigation">
-        <a href="ItemTemplate.html?project={{next}}" class="btn btn-dark userinfo" id="back">No thanks!</a>
+        <btn class="btn btn-dark userinfo" id="dislike">No thanks!</btn>
         <a href="home.html"><i class="glyphicon glyphicon-home"></i></a>
-        <a href="match.html?project={{title}}" class="btn btn-dark userinfo" id="submit">I want it!</a>
+        <btn class="btn btn-dark userinfo" id="submit">I want it!</btn>
       </div>
     </div>
 
 
-    </script> 
     <div id="templatedProjects">
       <!-- we will inject templated project HTML code into here -->
     </div>
@@ -44,5 +44,6 @@
   	<script src="../js/bootstrap.min.js"></script>
     <script src="../js/handlebars-v4.0.12.js"></script>
     <script src="../js/data.js"></script>
+
   </body>
 </html>
