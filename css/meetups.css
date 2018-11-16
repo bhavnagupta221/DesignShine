@@ -50,3 +50,10 @@ body{
   margin: auto;
   margin-bottom: 5px;
 }
+
+.glyphicon {
+  font-size: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
