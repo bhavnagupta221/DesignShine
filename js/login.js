@@ -90,7 +90,7 @@ $("#login").click( function() {
   
   
   
-  if ( username == "redBlue" && password == "shoelaces"){
+  if ( username == "testUser" && password == "1234"){
     window.location = "home.html";
     return true;
   }
