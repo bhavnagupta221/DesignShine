@@ -11,40 +11,17 @@ var tempItem = {
   "endTime": "",
   "location": ""*/
 };
-var myimg = "";
 
-/*function encodeImageAsURL() {
-  console.log("hi!");
-  var file = document.getElementById("uploadpic").files[0];
-  var filereader = new FileReader();
-  filereader.onload = function(fileLoadedEvent) {
-    var srcData = fileLoadedEvent.target.result;
-    //var newImage = document.createElement('img');
-    //newImage.src = srcData;
-
-    //document.getElementById
+function encodeImageAsURL() {
+  var elem = document.getElementById('uploadpic');
+  var file = elem.files[0];
+  var reader = new FileReader();
+  reader.onloadend = function() {
+    console.log('RESULT', reader.result)
+    tempItem.pic = reader.result;
   }
-  myimg = filereader.readAsDataURL(file);
-};*/
-
-var uploadpic = document.getElementById("uploadpic");
-
-
-/*input.onchange = function() {
-  console.log("storing");
-  
-  var imgCanvas = document.createElement("canvas"),
-      imgContext = imgCanvas.getContext("2d");
-  
-  imgCanvas.width = uploadpic.width;
-  imgCanvas.height = uploadpic.height;
-  
-  imgContext.drawImage(uploadpic,0,0,uploadpic.width,uploadpic.height);
-  
-  myimg = imgCanvas.toDataURL("image/png");
-  
-});*/
-
+  reader.readAsDataURL(file);
+}
 
 $("#dropoffinfo-submit").click(function() {
   tempItem.name = document.getElementById('name').value;
@@ -52,7 +29,11 @@ $("#dropoffinfo-submit").click(function() {
   tempItem.expirationDate = document.getElementById('exp-date').value;
   tempItem.allergens = document.getElementById('allergens').value;
   
-  //tempItem.image = myimg;
+  
+  //console.log(document.getElementById('uploadpic').value);
+  //tempItem.pic = document.getElementById('uploadpic').value;
+  
+  
   localStorage.setItem("currItem", tempItem.name);
   localStorage.setItem(tempItem.name, JSON.stringify(tempItem));
 });

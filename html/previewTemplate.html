@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/preview.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div class="overlay">
+        <h2 class="title"> {{name}} </h2>
+        <div>
+          <p class="userinfo" id="seller">Seller: {{seller}}</p>
+          <img src={{pic}}>
+          <p class="userinfo" id="location">Location: {{location}}</p>
+          <p class="userinfo" id="allergens">Allergens: {{allergens}}</p>
+        </div>
+
+        <div>
+          <a href="dropOffDetails.html" class="btn btn-dark userinfo" id="back">Edit Item</a>
+          <a href="home.html" class="btn btn-dark userinfo" id="submit">Submit</a>
+        </div>
+      </div>
+    </script>
+
+    
+    <div id="templatedProjects">
+      <!-- we will inject templated project HTML code into here -->
+    </div>
+    
+    
+    <!--link javascript-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/handlebars-v4.0.12.js"></script>
+    <script type="text/javascript" src="../js/preview.js"></script>
+  </body>
+</html>
