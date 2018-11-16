@@ -1,28 +1,27 @@
-var eggs = {'title': 'Eggs', 'seller': 'Jerrica', 'type': 'produce',
+var eggs = {'name': 'Eggs', 'packaged': 'false', 'produce': 'true', 'prepared': 'false',
             'description': '1 dozen fresh eggs', 'expiration date': '11/21/18',
             'allergens': 'egg', 'image': '../images/eggs.jpeg',
             'start-time': '6:00PM', 'end-time': '6:50PM', 'location': 'Price Center',
             'next': 'Brownies'};
 
-var broccoli = {'title': 'Broccoli', 'seller': 'Jerrica', 'type': 'produce',
+var broccoli = {'name': 'Broccoli', 'packaged': 'false', 'produce': 'true', 'prepared': 'false',
                 'description': 'yum yum broccoli', 'expiration date': '11/28/18',
                 'allergens': 'N/A', 'image': '../images/broccoli.jpg',
                 'start-time': '6:00PM', 'end-time': '6:50PM', 'location': 'Price Center',
                 'next': 'Brownies'};
 
-var brownies = {'title': 'Brownies', 'seller': 'Jerrica', 'type': 'prepared', 'description': 'homemade supreme triple chunk brownies', 'expiration date': '11/12/18', 'allergens': 'eggs, nuts', 'image': '../images/brownies.jpg', 'start-time': '6:00PM', 'end-time': '6:50PM', 'location': 'Price Center', 'next': 'Pasta'};
+var brownies = {'name': 'Brownies', 'packaged': 'false', 'produce': 'false', 'prepared': 'true', 'description': 'homemade supreme triple chunk brownies', 'expiration date': '11/12/18', 'allergens': 'eggs, nuts', 'image': '../images/brownies.jpg', 'start-time': '6:00PM', 'end-time': '6:50PM', 'location': 'Price Center', 'next': 'Pasta'};
 
-var pasta = {'title': 'Pasta', 'seller': 'Jerrica', 'type': 'packaged', 'description': 'uncooked box of pasta', 'expiration date': '1/1/22', 'allergens': 'gluten', 'image': '../images/pasta.jpg', 'start-time': '6:00PM', 'end-time': '6:50PM', 'location': 'Price Center', 'next': 'Banana'};
+var pasta = {'name': 'Pasta', 'packaged': 'true', 'produce': 'false', 'prepared': 'false', 'description': 'uncooked box of pasta', 'expiration date': '1/1/22', 'allergens': 'gluten', 'image': '../images/pasta.jpg', 'start-time': '6:00PM', 'end-time': '6:50PM', 'location': 'Price Center', 'next': 'Banana'};
 
-var banana = {'title': 'Banana', 'seller': 'Jerrica', 'type': 'produce', 'description': '1 singular banana', 'expiration date': '11/12/18', 'allergens': 'N/A', 'image': '../images/banana.jpg', 'start-time': '6:00PM', 'end-time': '6:50PM', 'location': 'Price Center', 'next': 'Pistachios'};
+var banana = {'name': 'Banana', 'packaged': 'false', 'produce': 'true', 'prepared': 'false', 'description': '1 singular banana', 'expiration date': '11/12/18', 'allergens': 'N/A', 'image': '../images/banana.jpg', 'start-time': '6:00PM', 'end-time': '6:50PM', 'location': 'Price Center', 'next': 'Pistachios'};
 
-var pistachios = {'title': 'Pistachios', 'seller': 'Jerrica', 'type': 'packaged', 'description': 'bag of pistachios', 'expiration date': '10/1/19', 'allergens': 'nuts', 'image': '../images/pistachios.jpg', 'start-time': '6:00PM', 'end-time': '6:50PM', 'location': 'Price Center', 'next': 'Cheerios'};
+var pistachios = {'name': 'Pistachios', 'packaged': 'true', 'produce': 'false', 'prepared': 'false', 'description': 'bag of pistachios', 'expiration date': '10/1/19', 'allergens': 'nuts', 'image': '../images/pistachios.jpg', 'start-time': '6:00PM', 'end-time': '6:50PM', 'location': 'Price Center', 'next': 'Cheerios'};
 
-var cheerios = {'title': 'Cheerios', 'seller': 'Jerrica', 'type': 'packaged', 'description': '1 box of Cheerios', 'expiration date': '1/1/19', 'allergens': 'gluten', 'image': '../images/cheerios.jpg', 'start-time': '6:00PM', 'end-time': '6:50PM', 'location': 'Price Center', 'next': 'Fruit Loops'};
+var cheerios = {'name': 'Cheerios', 'packaged': 'true', 'produce': 'false', 'prepared': 'false', 'description': '1 box of Cheerios', 'expiration date': '1/1/19', 'allergens': 'gluten', 'image': '../images/cheerios.jpg', 'start-time': '6:00PM', 'end-time': '6:50PM', 'location': 'Price Center', 'next': 'Fruit Loops'};
 
-var fruitloops = {'title': 'Fruit Loops', 'seller': 'Jerrica', 'type': 'packaged', 'description': '1 box of Fruit Loops', 'expiration date': '1/1/19', 'allergens': 'gluten', 'image': '../images/frootloops.jpg', 'start-time': '6:00PM', 'end-time': '6:50PM', 'location': 'Price Center', 'next': 'Done'};
+var fruitloops = {'name': 'Fruit Loops', 'packaged': 'true', 'produce': 'false', 'prepared': 'false',  'description': '1 box of Fruit Loops', 'expiration date': '1/1/19', 'allergens': 'gluten', 'image': '../images/frootloops.jpg', 'start-time': '6:00PM', 'end-time': '6:50PM', 'location': 'Price Center', 'next': 'Done'};
 
-var done = {'title': 'Done'};
 
 var complexData = [eggs, broccoli, brownies, pasta, banana, pistachios, cheerios, fruitloops];
 
