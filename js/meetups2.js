@@ -16,13 +16,14 @@ $(document).ready(function() {
   
   var matches = JSON.parse(localStorage.getItem("matches"));
 
+  var noMatches = document.getElementById("nomatches");
+  
   if (matches.length == 0) {
-    var source = $("#no-match").html();
-    var noMatch = $("#nomatches");
-    var html = template({"variable":''});
-    noMatch.append(html);
+   
+    noMatches.style.display = "block";
   }
   else {
+    noMatches.style.display = "none";
   matches_set = [];
   for(let m in matches) {
     if (!matches_set.includes(matches[m]))
