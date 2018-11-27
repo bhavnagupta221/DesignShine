@@ -1,4 +1,6 @@
+<!--NEW MEETUPS PAGE-->
 <!DOCTYPE html>
+
 <html>
   <head>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -6,11 +8,23 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/meetups.css" rel="stylesheet">
+    <link href="../css/meetups2.css" rel="stylesheet">
   </head>
 
   <body>
-    <a href="home.html"><i class="glyphicon glyphicon-home"></i></a>
+
+    <!--NAVIGATION-->
+    <nav id="top-section">
+      <ul>
+        <li><a class="nav-item nav-link" href="../index.html">Sign Out</a></li>
+        <li><a class="nav-item nav-link" href="dropofftype.html">Drop Off</a></li>
+        <li><a class="nav-item nav-link" href="pickuptype.html">Pick Up</a></li>
+        <li><a class="nav-item nav-link" href="home.html">Home</a></li>
+      </ul>
+    </nav>
+
+
+    <!--CARDS-->
     <script id="entry-template" type="text/x-handlebars-template">
       <div class="card">
         <p class="title"> {{name}} from Jerrica! </p>
@@ -19,17 +33,26 @@
           <p> Location: {{location}} </p>
           <p> Description: {{description}} </p>
         </div>
+        <button id="{{name}}" class="cancel btn btn-dark">Cancel Meetup</button>
       </div>
     </script>
+
 
     <div id="matches">
       <!-- we will inject templated project HTML code into here -->
     </div>
 
 
+    <div id="nomatches">
+      <p class="title"> You have no matches yet!</p>
+      <p>You can match with items through the Pick Up page.</p>
+      <a class="btn" href="pickuptype.html">Let's go!</a>
+    </div>
+
+
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/handlebars-v4.0.12.js"></script>
-    <script type="text/javascript" src="../js/meetups.js"></script>
+    <script type="text/javascript" src="../js/meetups2.js"></script>
   </body>
 </html>

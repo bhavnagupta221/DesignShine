@@ -21,6 +21,8 @@ $("#submit").click(function() {
   
   window.location = "match.html?name=" + order[counter];
   matches = JSON.parse(localStorage.getItem("matches"));
+  //if(!matches.includes(order[counter]))
+  //want this after comparitive bc its smarterer
   matches.push(order[counter]);
   localStorage.setItem("matches", JSON.stringify(matches));
   
