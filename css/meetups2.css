@@ -115,5 +115,43 @@ li a:hover{
 .btn-dark:hover, .btn-dark:focus, .btn-dark:active, .btn-dark.active, .open>.dropdown-toggle.btn-dark {
     color: #fff;
     background-color: #e21c02;
-    border-color: #e21c02; /*set the color you want here*/
+    border-color: #e21c02;
+}
+
+#nomatches{
+  background-color: white;
+  border-radius: 10px;
+  border: white;
+  margin: 0 auto;             /*horizontal center*/
+  margin-top: 15%;
+  text-align: center;
+  width: 400px;
+  height: 170px;
+}
+
+#nomatches .title {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#nomatches p {
+  font-family: Poppins, Helvetica;
+  font-size: 13px;
+  text-align: center;
+}
+
+
+#nomatches a{
+  color: white;
+  font-family: Poppins;
+  font-size: 12px;
+  background-color: green;
+  border-color: green;
+  padding: 10px;
+  width: 50%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-top: 20px;
+  border-radius: 5px;
 }
