@@ -12,37 +12,17 @@
   </head>
 
   <body>
+
     <!--NAVIGATION-->
-    <nav class="navbar navbar-dark bg-dark">
-      <span class="navbar-brand">CIAOCHOW</span>
-        <div class="navbar-nav">
-          <ul>
-            <li><a class="nav-item nav-link" href="home.html">Home<span class="sr-only">(current)</span></a></li>
-            <li><a class="nav-item nav-link" href="pickuptype.html">Pick Up</a></li>
-            <li><a class="nav-item nav-link" href="dropofftype.html">Drop Off</a></li>
-            <li><a class="nav-item nav-link" href="../index.html">Sign Out</a></li>
-          </ul>
-        </div>
+    <nav>
+      <ul>
+        <li><a class="nav-item nav-link" href="home.html">Home<span class="sr-only">(current)</span></a></li>
+        <li><a class="nav-item nav-link" href="pickuptype.html">Pick Up</a></li>
+        <li><a class="nav-item nav-link" href="dropofftype.html">Drop Off</a></li>
+        <li><a class="nav-item nav-link" href="../index.html">Sign Out</a></li>
+      </ul>
     </nav>
 
-
-
-
-
-    <!--OLD NAVBAR
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand col-sm-9" href="#">SARAH HALL</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav col-sm-8">
-          <a class="nav-item nav-link" href="#about">ABOUT<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#projects">PROJECTS</a>
-          <a class="nav-item nav-link" href="#contact">CONTACT</a>
-        </div>
-      </div>
-    </nav>-->
 
     <!--CARDS-->
     <script id="entry-template" type="text/x-handlebars-template">
@@ -53,7 +33,7 @@
           <p> Location: {{location}} </p>
           <p> Description: {{description}} </p>
         </div>
-        <button class="btn btn-dark">Cancel Meetup</button>
+        <button id="{{name}}" class="cancel btn btn-dark">Cancel Meetup</button>
       </div>
     </script>
 

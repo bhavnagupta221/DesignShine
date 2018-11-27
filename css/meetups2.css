@@ -12,26 +12,47 @@ body{
   background-color: #f9f9f9;
 }
 
-ul{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+/*NAVIGATION STYLE*/
+nav{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-li{
-  float: left;
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Poppins, Helvetica;
+    font-size: 13px;
+    text-transform: uppercase;
+    /*padding: 10px;*/
 }
 
-li a{
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
+li {
+    display: inline;
+    padding: 14px 16px;
 }
 
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover{
+  background-color: #555;
+  color: white;
+}
+
+
+/*LAYOUT STYLING*/
 .card{
   background-color: white;
   border-radius: 10px;
