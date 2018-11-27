@@ -21,7 +21,8 @@ $("#submit").click(function() {
   
   window.location = "match.html?name=" + order[counter];
   matches = JSON.parse(localStorage.getItem("matches"));
-  matches.push(order[counter]);
+  if(!matches.includes(order[counter]))
+    matches.push(order[counter]);
   localStorage.setItem("matches", JSON.stringify(matches));
   
 });
