@@ -14,11 +14,14 @@
   <body>
     <!--NAVIGATION-->
     <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">CIAOCHOW</a>
+      <span class="navbar-brand">CIAOCHOW</span>
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#about">ABOUT<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#projects">PROJECTS</a>
-          <a class="nav-item nav-link" href="#contact">CONTACT</a>
+          <ul>
+            <li><a class="nav-item nav-link" href="home.html">Home<span class="sr-only">(current)</span></a></li>
+            <li><a class="nav-item nav-link" href="pickuptype.html">Pick Up</a></li>
+            <li><a class="nav-item nav-link" href="dropofftype.html">Drop Off</a></li>
+            <li><a class="nav-item nav-link" href="../index.html">Sign Out</a></li>
+          </ul>
         </div>
     </nav>
 
@@ -57,6 +60,14 @@
     <div id="matches">
       <!-- we will inject templated project HTML code into here -->
     </div>
+
+    <script id="no-match" type="text/x-handlebars-template">
+      <p> You have no matches yet! {{variable}} </p>
+    </script>
+    
+    <div id="nomatches">
+    
+    </div>
 
 
     <script src="https://code.jquery.com/jquery.js"></script>
