@@ -1,0 +1,43 @@
+<!--NEW MEETUPS PAGE-->
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/meetups2.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--NAVIGATION-->
+    <nav class="navbar navbar-dark bg-dark">
+
+    </nav>
+
+    <!--CARDS-->
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div class="card">
+        <p class="title"> {{name}} from Jerrica! </p>
+        <div class="details">
+          <p> Time: {{startTime}} - {{endTime}} </p>
+          <p> Location: {{location}} </p>
+          <p> Description: {{description}} </p>
+        </div>
+        <button class="btn btn-dark">Cancel Meetup</button>
+      </div>
+    </script>
+
+    <div id="matches">
+      <!-- we will inject templated project HTML code into here -->
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/handlebars-v4.0.12.js"></script>
+    <script type="text/javascript" src="../js/meetups.js"></script>
+  </body>
+</html>
