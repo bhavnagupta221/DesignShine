@@ -13,15 +13,17 @@
       <div class="overlay">
         <h2 class="title"> {{name}} </h2>
         <div>
-          <p class="userinfo" id="seller">Seller: {{seller}}</p>
+          <!--<p class="userinfo" id="seller">Seller: {{seller}}</p>-->
           <img src={{pic}}>
+          <p class="userinfo" id="description">Details: {{description}}</p>
           <p class="userinfo" id="location">Location: {{location}}</p>
+          <p class="userinfo" id="time">Time: {{startTime}}-{{endTime}}</p>
           <p class="userinfo" id="allergens">Allergens: {{allergens}}</p>
         </div>
 
         <div>
-          <a href="dropOffDetails.html" class="btn btn-dark userinfo" id="back">Edit Item</a>
-          <a href="home.html" class="btn btn-dark userinfo" id="submit">Submit</a>
+          <a href="dropOffDetails.html" class="btn btn-dark buttons" id="back">Edit Item</a>
+          <a href="home.html" class="btn btn-dark buttons" id="submit">Submit</a>
         </div>
       </div>
     </script>

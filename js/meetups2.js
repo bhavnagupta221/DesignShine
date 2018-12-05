@@ -3,7 +3,8 @@ function cancelFunc() {
   //console.log("hi beebe");
   var matches = JSON.parse(localStorage.getItem("matches"));
   var i = matches.indexOf(this.id);
-  matches.splice(i);
+  //change this to splice(i,1) or something like that
+  matches.splice(i,1);
   localStorage.setItem("matches", JSON.stringify(matches));
   location.reload();
 };

@@ -14,7 +14,7 @@ body{
   background-color: white;
   border-radius: 10px;
   width: 400px;
-  height: 500px;
+  height: 545px;
   margin: 0 auto;             /*horizontal center*/
   margin-top: 5%;             /*vertical center*/
 }
@@ -29,53 +29,47 @@ body{
   font-size: 25px;
   font-weight: bold;
   position: relative;
-  top: 7px;
+  top: 12px;
+  margin-bottom: 20px;
 }
 
 img{
-  width: 100%;
+  max-width: 400px;
+  max-height: 250px;
+  display: block;
+  margin: 0 auto;
 }
+
 
 .userinfo{
   position: relative;
   font-size: 12px;
   margin-bottom: 5px;
   font-family: Poppins;
-}
-
-#seller{
-  margin: 0 auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  text-align: center;
-  padding: 5px;
   border: 1px solid black;
-  width: 25%;
-}
-
-#location{
-  margin: 0 auto;
-  margin-top: 35px;
   padding: 5px;
-  border: 1px solid black;
   width: 40%;
   text-align: center;
+  margin: 0 auto;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  min-width: 40%;
+
 }
 
-#allergens{
-  margin: 0 auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 5px;
-  border: 1px solid black;
-  width: 40%;
-  text-align: center;
+
+#description{
+  width: fit-content;
+  max-width: 80%;
 }
+
 
 .btn{
   position: relative;
-  top: 35px;
+  top: 5px;
   left: 10px;
+  font-size: 12px;
+  font-family: Poppins;
 }
 
 #submit{

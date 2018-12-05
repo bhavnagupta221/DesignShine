@@ -30,7 +30,8 @@ body{
   font-size: 25px;
   font-weight: bold;
   position: relative;
-  top: 7px;
+  top: 15px;
+  margin-bottom: 25px;
 }
 
 .profile{
@@ -55,7 +56,7 @@ img{
   max-height: 250px;
   display: block;
   margin: 0 auto;
-
+  
 }
 
 .userinfo{
@@ -63,8 +64,22 @@ img{
   font-size: 12px;
   margin-bottom: 5px;
   font-family: Poppins;
+  border: 1px solid black;
+  padding: 5px;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  min-width: 40%;
+
 }
 
+#description{
+  width: fit-content;
+  max-width: 80%;
+
+}
 
 /*#seller{
   margin: 0 auto;
@@ -75,25 +90,6 @@ img{
   border: 1px solid black;
   width: 25%;
 }*/
-
-#location{
-  margin: 0 auto;
-  margin-top: 35px;
-  padding: 5px;
-  border: 1px solid black;
-  width: 40%;
-  text-align: center;
-}
-
-#allergens{
-  margin: 0 auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 5px;
-  border: 1px solid black;
-  width: 40%;
-  text-align: center;
-}
 
 .navigation {
   position: absolute;
