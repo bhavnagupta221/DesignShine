@@ -18,6 +18,6 @@ $(document).ready(function() {
 });
 
 $("#submit").click(function() {
-  localStorage.setItem("currItem", JSON.stringify({}));
+  localStorage.setItem("currItem", "");
   
 });

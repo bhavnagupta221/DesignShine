@@ -42,7 +42,9 @@ $(document).ready(function() {
       document.getElementById('endmin').value = tempItem.endTime.slice(2,4);
       document.getElementById('endday-night').value = tempItem.endTime.slice(4,6);
     }
-    document.getElementById("location").value = tempItem.location;
+    if(tempItem.location) {
+      document.getElementById("location").value = tempItem.location;
+    }
     
   }
   //console.log(tempItem);

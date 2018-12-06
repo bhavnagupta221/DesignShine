@@ -21,6 +21,11 @@ var cheerios = {'name': 'Cheerios', 'packaged': true, 'produce': false, 'prepare
 var fruitloops = {'name': 'Fruit Loops', 'packaged': true, 'produce': false, 'prepared': false,  'description': '1 box of Fruit Loops', 'expirationDate': '1/1/19', 'allergens': 'gluten', 'pic': '../images/frootloops.jpg', 'startTime': '6:00PM', 'endTime': '6:50PM', 'location': 'Price Center'};
 
 
+$(document).ready(function() {
+  console.log("crazyCRAZY");
+  localStorage.setItem("currItem", "");
+});
+
 //test the link between files
 $( "p" ).click(function() {
     console.log( "You clicked a paragraph!" );
