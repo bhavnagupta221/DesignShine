@@ -16,3 +16,8 @@ $(document).ready(function() {
   parentDiv.append(html);
   
 });
+
+$("#submit").click(function() {
+  localStorage.setItem("currItem", JSON.stringify({}));
+  
+});
