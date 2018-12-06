@@ -18,6 +18,7 @@ nav{
   padding-bottom: 10px;
 }
 
+
 ul {
     position: fixed;
     top: 0;
@@ -51,6 +52,10 @@ li a:hover{
   color: white;
 }
 
+#logo {
+  width: 60px;
+  height: 60px;
+}
 
 /*LAYOUT STYLING*/
 .card{
