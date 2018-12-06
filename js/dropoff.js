@@ -29,7 +29,6 @@ $("#dropoffinfo-submit").click(function() {
   var description = document.getElementById('desc').value;
   var expirationDate = document.getElementById('exp-date').value;
   var allergens = document.getElementById('allergens').value;
-  console.log(allergens);
   if (name == "" || description == "" || expirationDate == "" || allergens == ""){
     alert("Please fill out all the fields")
     return false;
