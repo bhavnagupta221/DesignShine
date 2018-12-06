@@ -56,7 +56,7 @@ img{
   max-height: 250px;
   display: block;
   margin: 0 auto;
-  
+
 }
 
 .userinfo{
@@ -72,13 +72,11 @@ img{
   margin-top: 15px;
   margin-bottom: 15px;
   min-width: 40%;
-
 }
 
 #description{
   width: fit-content;
   max-width: 80%;
-
 }
 
 /*#seller{
@@ -94,21 +92,68 @@ img{
 .navigation {
   position: absolute;
   bottom: 5px;
-  left: 10px;
+  /*left: 15px;*/
+  width: 100%;
+  /*background-color: red;*/
 }
 
-#submit{
+/*#submit{
   position: relative;
   left: 210px;
+}*/
+
+.btn {
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-family: Poppins;
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+  transition: 0.3s;
 }
 
-.glyphicon{
-  position: relative;
-  left: 100px;
-  padding-top: 20px;
+#dislike {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+}
+
+#dislike:hover {
+  background-color: red;
+  border-color: red;
+}
+
+#submit {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
+#submit:hover{
+  background-color: green;
+  border-color: green;
+}
+
+.navigation a {
+  position: inherit;
+  bottom: 0px;
+  left: 49%;
   font-size: 20px;
   text-decoration: none;
+  transition: 0.3s;
 }
+
+/*
+.glyphicon{
+  position: absolute;
+  left: 100px;
+  margin-top: 0px;
+  bottom: 0px;
+  left: 50%;
+  font-size: 20px;
+  text-decoration: none;
+}*/
 
 .navigation a, .navigation btn{
   text-decoration: none;
