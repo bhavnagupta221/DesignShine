@@ -18,7 +18,7 @@ $("#dropoffinfo-submit").click(function() {
   var expirationDate = document.getElementById('exp-date').value;
   var allergens = document.getElementById('allergens').value;
   if (name == "" || description == "" || expirationDate == "" || allergens == ""){
-    alert("Please fill out all the fields")
+    alert("Please fill out all the fields");
     return false;
   }
   else if(tempItem.pic == null) {
@@ -41,7 +41,7 @@ $("#dropoffinfo-submit").click(function() {
 
 $(document).ready(function() {
   tempItem = {};
-  currItem = (localStorage.getItem("currItem"));
+  var currItem = (localStorage.getItem("currItem"));
   if(currItem != "") {
     tempItem = JSON.parse(localStorage.getItem(currItem));
     document.getElementById('name').value = tempItem.name;
