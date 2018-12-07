@@ -24,7 +24,10 @@ body{
   background-color: white;
   border-radius: 10px;
   width: 400px;
-  height:450px;
+  /*height:450px;*/
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   margin: 0 auto;             /*horizontal center*/
   margin-top: 7%;             /*vertical center*/
   position: relative;
@@ -49,11 +52,17 @@ body{
   text-align: center;
 }
 
-.btn-block{
+#name2 {
   width: 65%;
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: Poppins, Helvetica;
+  font-size: 13px;
+  /*padding: 5px;*/
+  margin: 5px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 .info{
@@ -81,19 +90,35 @@ body{
   color: black;
 }
 
+#shop {
+  margin: 0 auto;
+  text-align: center;
+}
+
+div #shop {
+  color: white;
+  font-family: Poppins;
+  font-size: 12px;
+  background-color: green;
+  border-color: green;
+  padding: 10px;
+  width: 50%;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+div #shop:hover{
+  background-color: #79c174;
+  border-color: #79c174;
+}
+
+
 .glyphicon{
   /*left: 100px;*/
   padding-top: 20px;
   font-size: 20px;
   text-decoration: none;
+  transition: 0.3s;
 }
-
-/*#name2:hover{
-  background-color: white;
-  border: 2px dotted black;
-}
-
-#name2:hover a{
-  color: black;
-  text-transform: uppercase;
-}*/
