@@ -18,6 +18,7 @@ nav{
   padding-bottom: 10px;
 }
 
+
 ul {
     position: fixed;
     top: 0;
@@ -27,7 +28,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
     font-family: Poppins, Helvetica;
     font-size: 13px;
     text-transform: uppercase;
@@ -44,6 +45,7 @@ li a {
     color: white;
     text-align: center;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 li a:hover{
@@ -51,6 +53,9 @@ li a:hover{
   color: white;
 }
 
+#logo {
+  height: 60px;
+}
 
 /*LAYOUT STYLING*/
 .card{
@@ -58,7 +63,9 @@ li a:hover{
   border-radius: 10px;
   border: white;
   width: 400px;
-  height: 230px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   margin: 0 auto;             /*horizontal center*/
   margin-top: 5%;
 }
@@ -109,6 +116,7 @@ li a:hover{
   margin: 0 auto;
   text-transform: uppercase;
   margin-top: 20px;
+  margin-bottom: 10px;
   border-radius: 5px;
 }
 
@@ -154,4 +162,9 @@ li a:hover{
   text-transform: uppercase;
   margin-top: 20px;
   border-radius: 5px;
+}
+
+#nomatches a:hover{
+  background-color: #79c174;
+  border-color: #79c174;
 }

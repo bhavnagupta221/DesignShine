@@ -10,6 +10,52 @@ body{
   background-color: #f9f9f9;
 }
 
+/*NAVIGATION STYLE*/
+nav{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: Poppins, Helvetica;
+    font-size: 13px;
+    text-transform: uppercase;
+    /*padding: 10px;*/
+}
+
+li {
+    float: right;
+    padding: 14px 16px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+li a:hover{
+  background-color: #555;
+  color: white;
+}
+
+#logo {
+  height: 60px;
+}
+
+
 p{
   font-family: Poppins, Helvetica;
   font-size: 13px;
@@ -73,5 +119,3 @@ p{
   position: relative;
   left: 260px;
 }
-
-
