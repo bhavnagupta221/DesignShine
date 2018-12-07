@@ -14,7 +14,10 @@ body{
   background-color: white;
   border-radius: 10px;
   width: 400px;
-  height: 530px;
+  /*height: 530px;*/
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   margin: 0 auto;             /*horizontal center*/
   margin-top: 5%;             /*vertical center*/
   position: relative;
@@ -102,6 +105,10 @@ img{
   left: 210px;
 }*/
 
+.iteminfo #allergens {
+  margin-bottom: 50px;
+}
+
 .btn {
   font-size: 12px;
   margin-bottom: 5px;
@@ -137,13 +144,20 @@ img{
 
 .navigation a {
   position: inherit;
+  display: block;
   bottom: 0px;
   left: 49%;
   font-size: 20px;
   text-decoration: none;
   transition: 0.3s;
+  margin-top: -top: 10px;
 }
-
+/*
+.navigation a i {
+  display: block;
+  margin-top: 10px;
+}
+*/
 /*
 .glyphicon{
   position: absolute;

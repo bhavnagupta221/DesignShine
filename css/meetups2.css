@@ -164,3 +164,8 @@ li a:hover{
   margin-top: 20px;
   border-radius: 5px;
 }
+
+#nomatches a:hover{
+  background-color: #79c174;
+  border-color: #79c174;
+}
