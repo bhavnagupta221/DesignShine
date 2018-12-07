@@ -133,7 +133,7 @@ function login() {
   
   
   if ( username == "testUser" && password == "1234"){
-    window.location = "home.html";
+    window.location = "html/home.html";
     return true;
   }
   else {
