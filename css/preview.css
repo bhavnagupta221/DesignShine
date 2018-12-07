@@ -14,9 +14,13 @@ body{
   background-color: white;
   border-radius: 10px;
   width: 400px;
-  height: 545px;
+  /*height: 545px;*/
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   margin: 0 auto;             /*horizontal center*/
   margin-top: 5%;             /*vertical center*/
+  position: relative;
 }
 
 .title{
@@ -57,22 +61,44 @@ img{
 
 }
 
+#allergens{
+  margin-bottom: 50px;
+}
 
 #description{
   width: fit-content;
   max-width: 80%;
 }
 
+#somebuttons {
+  position: inherit;
+  width: 100%;
+}
 
 .btn{
-  position: relative;
-  top: 5px;
-  left: 10px;
   font-size: 12px;
   font-family: Poppins;
 }
 
+
+#back {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
+
+#back:hover {
+  background-color: red;
+  border-color: red;
+}
+
 #submit{
-  position: relative;
-  left: 240px;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
+#submit:hover{
+  background-color: green;
+  border-color: green;
 }
