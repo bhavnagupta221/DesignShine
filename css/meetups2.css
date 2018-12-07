@@ -28,7 +28,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
     font-family: Poppins, Helvetica;
     font-size: 13px;
     text-transform: uppercase;
@@ -54,7 +54,6 @@ li a:hover{
 }
 
 #logo {
-  width: 60px;
   height: 60px;
 }
 

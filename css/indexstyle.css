@@ -14,9 +14,21 @@ body{
   background-color: white;
   border-radius: 10px;
   width: 400px;
-  height: 400px;
+  /*height: 400px;*/
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   margin: 0 auto;             /*horizontal center*/
   margin-top: 7%;             /*vertical center*/
+  position: relative;
+}
+
+#logo {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 40%;
+  display: block;
+  margin: auto;
 }
 
 .title{
@@ -45,6 +57,7 @@ body{
   border-radius: 5px;
   width: 80%;
   margin: 0 auto;
+  text-align: left;
 }
 
 .btn{
@@ -60,4 +73,13 @@ body{
   font-size: 12px;
   position: relative;
   top: 10px;
+}
+
+#psw {
+  margin-bottom: 20px;
+}
+
+#login {
+  position: absolute;
+  bottom: 10px;
 }
