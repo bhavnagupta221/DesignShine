@@ -5,10 +5,17 @@ function encodeImageAsURL() {
   var elem = document.getElementById('uploadpic');
   var file = elem.files[0];
   var reader = new FileReader();
-  reader.onloadend = function() {
-    tempItem.pic = reader.result;
+  console.log(file.size/1024);
+  if (file.size/1024 > 500) {
+    alert('File size exceeds 500kb');
+    elem.value = "";
   }
-  reader.readAsDataURL(file);
+  else {
+    reader.onloadend = function() {
+      tempItem.pic = reader.result;
+    }
+    reader.readAsDataURL(file);
+  }
 }
 
 
@@ -26,6 +33,7 @@ $("#dropoffinfo-submit").click(function() {
     return false;
   }
   else {
+    console.log("save");
     tempItem.name = name;
     tempItem.description = description;
     tempItem.expirationDate = expirationDate;
