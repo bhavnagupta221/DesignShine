@@ -22,6 +22,9 @@ var fruitloops = {'name': 'Fruit Loops', 'packaged': true, 'produce': false, 'pr
 
 var mashedpotatoes = {'name': 'Mashed Potatoes', 'packaged': false, 'produce': false, 'prepared': true,  'description': 'grammmas homemade recipe', 'expirationDate': '12/10/18', 'allergens': 'egg, dairy', 'pic': '../images/potates.jpg', 'startTime': '3:00AM', 'endTime': '5:00PM', 'location': 'Geisel'};
 
+var pie = {'name': 'Pie', 'packaged': false, 'produce': false, 'prepared': true,  'description': 'homemade lemon meringue, with love!', 'expirationDate': '12/14/18', 'allergens': 'egg, dairy', 'pic': '../images/pie.jpg', 'startTime': '4:30PM', 'endTime': '6:00PM', 'location': 'Geisel'};
+
+var spaghetti = {'name': 'Spaghetti', 'packaged': false, 'produce': false, 'prepared': true,  'description': 'with meatballs', 'expirationDate': '12/10/18', 'allergens': 'meat', 'pic': '../images/spaghetti.jpeg', 'startTime': '12:00PM', 'endTime': '1:00PM', 'location': 'Price Center'};
 
 $(document).ready(function() {
   console.log("crazyCRAZY");
@@ -87,7 +90,7 @@ $("#login").click( function() {
   localStorage.setItem("matches", JSON.stringify([]));
   
   localStorage.setItem("Eggs", JSON.stringify(eggs));
-  localStorage.setItem("Broccoli", JSON.stringify(broccoli));
+  //localStorage.setItem("Broccoli", JSON.stringify(broccoli));
   localStorage.setItem("Brownies", JSON.stringify(brownies));
   localStorage.setItem("Pasta", JSON.stringify(pasta));
   localStorage.setItem("Banana", JSON.stringify(banana));
@@ -95,7 +98,10 @@ $("#login").click( function() {
   localStorage.setItem("Cheerios", JSON.stringify(cheerios));
   localStorage.setItem("Fruit Loops", JSON.stringify(fruitloops));
   localStorage.setItem("Mashed Potatoes", JSON.stringify(mashedpotatoes));
-  
+  localStorage.setItem("Pie", JSON.stringify(pie));
+  localStorage.setItem("Spaghetti", JSON.stringify(spaghetti));
+
+
   
   if ( username == "testUser" && password == "1234"){
     window.location = "home.html";
@@ -122,7 +128,7 @@ function login() {
   localStorage.setItem("matches", JSON.stringify([]));
   
   localStorage.setItem("Eggs", JSON.stringify(eggs));
-  localStorage.setItem("Broccoli", JSON.stringify(broccoli));
+  //localStorage.setItem("Broccoli", JSON.stringify(broccoli));
   localStorage.setItem("Brownies", JSON.stringify(brownies));
   localStorage.setItem("Pasta", JSON.stringify(pasta));
   localStorage.setItem("Banana", JSON.stringify(banana));
@@ -130,7 +136,8 @@ function login() {
   localStorage.setItem("Cheerios", JSON.stringify(cheerios));
   localStorage.setItem("Fruit Loops", JSON.stringify(fruitloops));
   localStorage.setItem("Mashed Potatoes", JSON.stringify(mashedpotatoes));
-  
+  localStorage.setItem("Pie", JSON.stringify(pie));
+  localStorage.setItem("Spaghetti", JSON.stringify(spaghetti));
   
   if ( username == "testUser" && password == "1234"){
     window.location = "html/home.html";
