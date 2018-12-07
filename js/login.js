@@ -90,7 +90,7 @@ $("#login").click( function() {
   localStorage.setItem("matches", JSON.stringify([]));
   
   localStorage.setItem("Eggs", JSON.stringify(eggs));
-  //localStorage.setItem("Broccoli", JSON.stringify(broccoli));
+  localStorage.setItem("Broccoli", JSON.stringify(broccoli));
   localStorage.setItem("Brownies", JSON.stringify(brownies));
   localStorage.setItem("Pasta", JSON.stringify(pasta));
   localStorage.setItem("Banana", JSON.stringify(banana));
@@ -128,7 +128,7 @@ function login() {
   localStorage.setItem("matches", JSON.stringify([]));
   
   localStorage.setItem("Eggs", JSON.stringify(eggs));
-  //localStorage.setItem("Broccoli", JSON.stringify(broccoli));
+  localStorage.setItem("Broccoli", JSON.stringify(broccoli));
   localStorage.setItem("Brownies", JSON.stringify(brownies));
   localStorage.setItem("Pasta", JSON.stringify(pasta));
   localStorage.setItem("Banana", JSON.stringify(banana));
